@@ -36,7 +36,7 @@ function createDefaultOptions() {
     to: '',
     tags: [],
     tagDateMap: new Map(),
-    capitalize: true,
+    capitalize: false,
     emoji: true,
     titles: {
       breakingChanges: '🚨 Breaking Changes'

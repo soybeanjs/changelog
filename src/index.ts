@@ -38,6 +38,10 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
 
   const tags = getFromToTags(opts.tags);
 
+  if (tags.length === 0) {
+    return getChangelogMarkdown(opts);
+  }
+
   bar?.start(tags.length, 0);
 
   let markdown = '';

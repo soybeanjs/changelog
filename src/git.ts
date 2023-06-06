@@ -260,13 +260,13 @@ export async function getGitCommitsAndResolvedAuthors(
   for await (const commit of commits) {
     const resolvedAuthors: ResolvedAuthor[] = [];
 
-    for await (const [index, author] of Object.entries(commit.authors)) {
+    for await (const [index, author] of commit.authors.entries()) {
       const { email, name } = author;
 
       if (email && name) {
         const commitHashes: string[] = [];
 
-        if (index === '0') {
+        if (index === 0) {
           commitHashes.push(commit.shortHash);
         }
 
