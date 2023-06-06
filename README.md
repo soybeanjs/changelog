@@ -11,11 +11,11 @@ pnpm i -D @soybeanjs/changelog
 ## Usage
 
 ```ts
-import { 
+import {
   getChangelogMarkdown,
   getTotalChangelogMarkdown,
   generateChangelog,
-  generateTotalChangelog
+  generateTotalChangelog,
 } from "@soybeanjs/changelog";
 
 // get the changelog markdown by two git tags
