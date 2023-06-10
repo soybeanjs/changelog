@@ -141,13 +141,13 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to}`;
+  const isNewVersion = !VERSION_REG.test(options.to);
+
+  const version = isNewVersion ? options.newVersion : options.to;
+
+  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${version}`;
 
   if (showTitle) {
-    const isNewVersion = !VERSION_REG.test(options.to);
-
-    const version = isNewVersion ? options.newVersion : options.to;
-
     const date = isNewVersion ? dayjs().format('YY-MM-DD') : options.tagDateMap.get(options.to);
 
     let title = `## [${version}](${url})`;
