@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.0.3](https://github.com/soybeanjs/changelog/compare/v0.0.2...main) (23-06-12)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix version title &nbsp;-&nbsp; by @soybeanjs [<samp>(035df)</samp>](https://github.com/soybeanjs/changelog/commit/035df12)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & update package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(02330)</samp>](https://github.com/soybeanjs/changelog/commit/0233089)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.2](https://github.com/soybeanjs/changelog/compare/v0.0.1...main) (23-06-07)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
