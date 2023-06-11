@@ -34,10 +34,10 @@
   "scripts": {
     "build": "pnpm typecheck && unbuild",
     "lint": "eslint . --fix",
-    "format": "soy prettier-format",
+    "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
-    "update-pkg": "soy update-pkg",
+    "ncu": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
     "typecheck": "tsc --noEmit",
     "release": "soy release && pnpm build && pnpm publish-pkg"
@@ -47,22 +47,24 @@
     "convert-gitmoji": "0.1.3",
     "dayjs": "1.11.8",
     "execa": "7.1.1",
-    "ofetch": "1.0.1"
+    "ofetch": "1.1.0"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.5.2",
+    "@soybeanjs/cli": "0.6.0",
     "@types/cli-progress": "3.11.0",
-    "@types/node": "20.2.5",
-    "eslint": "8.41.0",
-    "eslint-config-soybeanjs": "0.4.7",
+    "@types/node": "20.3.0",
+    "eslint": "8.42.0",
+    "eslint-config-soybeanjs": "0.4.9",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
-    "typescript": "5.0.4",
+    "typescript": "5.1.3",
     "unbuild": "1.2.1"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm soy lint-staged"
   },
-  "github-token": "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"
+  "soybean": {
+    "useSoybeanToken": true
+  }
 }
