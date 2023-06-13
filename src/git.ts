@@ -212,7 +212,9 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
   try {
     const data = await ofetch(`https://ungh.cc/users/find/${email}`);
     login = data?.user?.username || '';
-  } catch {}
+  } catch (e) {
+    console.log('e: ', e);
+  }
 
   if (login) {
     return login;
@@ -231,7 +233,9 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
         headers: getHeaders(token)
       });
       login = data?.author?.login || '';
-    } catch (e) {}
+    } catch (e) {
+      console.log('e: ', e);
+    }
   }
 
   if (login) {
@@ -243,7 +247,9 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
       headers: getHeaders(token)
     });
     login = data.items[0].login;
-  } catch (e) {}
+  } catch (e) {
+    console.log('e: ', e);
+  }
 
   return login;
 }
