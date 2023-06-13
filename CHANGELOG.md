@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v0.0.4](https://github.com/soybeanjs/changelog/compare/v0.0.3...main) (23-06-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update CHANGELOG.md & add error console for github resolve &nbsp;-&nbsp; by **Soybean** [<samp>(149dd)</samp>](https://github.com/soybeanjs/changelog/commit/149ddfb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:honghuangdc@gmail.com)
+
 ## [v0.0.3](https://github.com/soybeanjs/changelog/compare/v0.0.2...v0.0.3) (2023-06-12)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
