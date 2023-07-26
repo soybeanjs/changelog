@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.0.5](https://github.com/soybeanjs/changelog/compare/v0.0.4...v0.0.5) (23-07-27)
+
+### &nbsp;&nbsp;&nbsp;🔥 Performance
+
+- **projects**: filter commits means that release version &nbsp;-&nbsp; by @honghuangdc [<samp>(c4220)</samp>](https://github.com/soybeanjs/changelog/commit/c422043)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(0116e)</samp>](https://github.com/soybeanjs/changelog/commit/0116ea2)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.0.4](https://github.com/soybeanjs/changelog/compare/v0.0.3...main) (23-06-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
