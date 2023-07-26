@@ -116,13 +116,13 @@ async function getGitDiff(from?: string, to = 'HEAD'): Promise<RawGitCommit[]> {
   const gitCommits = rwaGitLines.map(line => {
     const [firstLine, ...body] = line.split('\n');
     const [message, shortHash, authorName, authorEmail] = firstLine.split('|');
-    const gitCommmit: RawGitCommit = {
+    const gitCommit: RawGitCommit = {
       message,
       shortHash,
       author: { name: authorName, email: authorEmail },
       body: body.join('\n')
     };
-    return gitCommmit;
+    return gitCommit;
   });
 
   return gitCommits;
@@ -167,9 +167,9 @@ function parseGitCommit(commit: RawGitCommit): GitCommit | null {
   // Find all authors
   const authors: GitCommitAuthor[] = [commit.author];
 
-  const matchs = commit.body.matchAll(CoAuthoredByRegex);
+  const matches = commit.body.matchAll(CoAuthoredByRegex);
 
-  for (const $match of matchs) {
+  for (const $match of matches) {
     const { name = '', email = '' } = $match.groups || {};
 
     const author: GitCommitAuthor = {

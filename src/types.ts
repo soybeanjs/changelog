@@ -49,7 +49,7 @@ export interface Reference {
 }
 
 /**
- * the resolved githhub author
+ * the resolved github author
  */
 export interface ResolvedAuthor extends GitCommitAuthor {
   /**
@@ -57,7 +57,7 @@ export interface ResolvedAuthor extends GitCommitAuthor {
    */
   commits: string[];
   /**
-   * the github logined username of the author
+   * the github logged username of the author
    */
   login: string;
 }
@@ -169,7 +169,7 @@ export interface ChangelogOption {
    */
   regenerate: boolean;
   /**
-   * version from package.json, with preffix "v"
+   * version from package.json, with prefix "v"
    * @description if the options "to" is not specified, the version will be used
    */
   newVersion: string;

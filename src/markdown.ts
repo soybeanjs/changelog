@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'fs/promises';
 import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
 import { partition, groupBy, capitalize, join } from './shared';
-import { VERSION_REG, VERSION_REG_OF_MARKDOWN } from './constant';
+import { VERSION_REG, VERSION_WITH_RELEASE, VERSION_REG_OF_MARKDOWN } from './constant';
 import type { Reference, GitCommit, ChangelogOption, ResolvedAuthor } from './types';
 
 function formatReferences(references: Reference[], githubRepo: string, type: 'issues' | 'hash'): string {
@@ -108,7 +108,7 @@ function getGitUserAvatar(userName: string) {
 
 function createContributorLine(contributors: ResolvedAuthor[]) {
   let loginLine = '';
-  let unloginLine = '';
+  let unLoginLine = '';
 
   contributors.forEach((contributor, index) => {
     const { name, email, login } = contributor;
@@ -120,7 +120,7 @@ function createContributorLine(contributors: ResolvedAuthor[]) {
         line += ',&nbsp;';
       }
 
-      unloginLine += line;
+      unLoginLine += line;
     } else {
       const githubUrl = getUserGithub(login);
       const avatar = getGitUserAvatar(login);
@@ -128,7 +128,7 @@ function createContributorLine(contributors: ResolvedAuthor[]) {
     }
   });
 
-  return `${loginLine}\n${unloginLine}`;
+  return `${loginLine}\n${unLoginLine}`;
 }
 
 export function generateMarkdown(params: {
@@ -137,7 +137,10 @@ export function generateMarkdown(params: {
   showTitle: boolean;
   contributors: ResolvedAuthor[];
 }) {
-  const { commits, options, showTitle, contributors } = params;
+  const { options, showTitle, contributors } = params;
+
+  // filter commits means that release version
+  const commits = params.commits.filter(commit => commit.description.match(VERSION_WITH_RELEASE) === null);
 
   const lines: string[] = [];
 
@@ -163,7 +166,7 @@ export function generateMarkdown(params: {
 
   const group = groupBy(changes, 'type');
 
-  lines.push(...formatSection(breaking, options.titles.breakingChanges!, options));
+  lines.push(...formatSection(breaking, options.titles.breakingChanges, options));
 
   for (const type of Object.keys(options.types)) {
     const items = group[type] || [];
