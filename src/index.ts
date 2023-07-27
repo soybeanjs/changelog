@@ -1,5 +1,4 @@
-import cliProgress from 'cli-progress';
-import type { SingleBar } from 'cli-progress';
+import { SingleBar, Presets } from 'cli-progress';
 import { createOptions } from './options';
 import { getFromToTags, getGitCommits, getGitCommitsAndResolvedAuthors } from './git';
 import { isVersionInMarkdown, generateMarkdown, writeMarkdown } from './markdown';
@@ -30,9 +29,9 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
 
   let bar: SingleBar | null = null;
   if (showProgress) {
-    bar = new cliProgress.SingleBar(
+    bar = new SingleBar(
       { format: 'generate total changelog: [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}' },
-      cliProgress.Presets.shades_classic
+      Presets.shades_classic
     );
   }
 
