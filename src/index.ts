@@ -94,5 +94,3 @@ export async function generateTotalChangelog(options?: Partial<ChangelogOption>,
 }
 
 export type { ChangelogOption };
-
-getChangelogMarkdown();
