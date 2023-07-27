@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.0.6](https://github.com/soybeanjs/changelog/compare/v0.0.5...v0.0.6) (23-07-27)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: remove debug code &nbsp;-&nbsp; by @honghuangdc [<samp>(21f1a)</samp>](https://github.com/soybeanjs/changelog/commit/21f1a23)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.0.5](https://github.com/soybeanjs/changelog/compare/v0.0.4...v0.0.5) (23-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
