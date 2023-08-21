@@ -32,29 +32,33 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm typecheck && unbuild",
+    "build": "pnpm typecheck && unbuild && pnpm build-pkg",
+    "build-pkg": "pnpm -r --filter='./packages/*' run build",
+    "stub": "pnpm unbuild --stub",
     "lint": "eslint . --fix",
     "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "ncu": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
-    "typecheck": "tsc --noEmit",
-    "release": "soy release && pnpm build && pnpm publish-pkg"
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "release": "soy release && pnpm build && pnpm publish-pkg",
+    "prepare": "pnpm stub && pnpm -r run stub"
   },
   "dependencies": {
     "cli-progress": "3.12.0",
     "convert-gitmoji": "0.1.3",
     "dayjs": "1.11.9",
-    "execa": "7.1.1",
+    "execa": "8.0.1",
     "ofetch": "1.1.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.6.2",
+    "@soybeanjs/cli": "0.6.6",
     "@types/cli-progress": "3.11.0",
-    "@types/node": "20.4.5",
-    "eslint": "8.45.0",
-    "eslint-config-soybeanjs": "0.5.3",
+    "@types/node": "20.5.1",
+    "eslint": "8.47.0",
+    "eslint-config-soybeanjs": "0.5.5",
+    "githublogen": "workspace:*",
     "simple-git-hooks": "2.9.0",
     "tsx": "3.12.7",
     "typescript": "5.1.6",
@@ -63,8 +67,5 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm soy lint-staged"
-  },
-  "soybean": {
-    "useSoybeanToken": true
   }
 }

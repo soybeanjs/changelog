@@ -173,4 +173,8 @@ export interface ChangelogOption {
    * @description if the options "to" is not specified, the version will be used
    */
   newVersion: string;
+  /**
+   * Mark the release as prerelease
+   */
+  prerelease?: boolean;
 }

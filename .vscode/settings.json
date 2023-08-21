@@ -19,5 +19,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "cSpell.words": ["creatordate", "execa", "gitmoji", "ofetch"]
+  "cSpell.words": ["consola", "creatordate", "execa", "gitmoji", "kolorist", "ofetch"]
 }

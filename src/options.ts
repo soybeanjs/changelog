@@ -5,7 +5,8 @@ import {
   getLastGitTag,
   getCurrentGitBranch,
   getGitHubRepo,
-  getFirstGitCommit
+  getFirstGitCommit,
+  isPrerelease
 } from './git';
 import type { ChangelogOption } from './types';
 
@@ -85,6 +86,8 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
   opts.tags = await getTotalGitTags();
 
   opts.tagDateMap = await getTagDateMap();
+
+  opts.prerelease = opts.prerelease ?? isPrerelease(opts.to);
 
   return opts;
 }

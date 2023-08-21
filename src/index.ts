@@ -7,16 +7,21 @@ import type { ChangelogOption } from './types';
 /**
  * get the changelog markdown by two git tags
  * @param options the changelog options
+ * @param showTitle whither show the title
  */
-export async function getChangelogMarkdown(options?: Partial<ChangelogOption>) {
+export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, showTitle = true) {
   const opts = await createOptions(options);
 
   const gitCommits = await getGitCommits(opts.from, opts.to);
   const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github);
 
-  const markdown = generateMarkdown({ commits, options: opts, showTitle: true, contributors });
+  const markdown = generateMarkdown({ commits, options: opts, showTitle, contributors });
 
-  return markdown;
+  return {
+    markdown,
+    commits,
+    options: opts
+  };
 }
 
 /**
@@ -38,7 +43,9 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
   const tags = getFromToTags(opts.tags);
 
   if (tags.length === 0) {
-    return getChangelogMarkdown(opts);
+    const { markdown } = await getChangelogMarkdown(opts);
+
+    return markdown;
   }
 
   bar?.start(tags.length, 0);
@@ -74,7 +81,7 @@ export async function generateChangelog(options?: Partial<ChangelogOption>) {
 
   if (!opts.regenerate && existContent) return;
 
-  const markdown = await getChangelogMarkdown(opts);
+  const { markdown } = await getChangelogMarkdown(opts);
 
   await writeMarkdown(markdown, opts.output, opts.regenerate);
 }
