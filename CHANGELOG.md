@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.2](https://github.com/soybeanjs/changelog/compare/v0.3.1...v0.3.2) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: remove prepare script &nbsp;-&nbsp; by @honghuangdc [<samp>(4539b)</samp>](https://github.com/soybeanjs/changelog/commit/4539b3c)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.1](https://github.com/soybeanjs/changelog/compare/v0.3.0...v0.3.1) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
