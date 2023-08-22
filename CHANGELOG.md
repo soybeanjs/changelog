@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.1](https://github.com/soybeanjs/changelog/compare/v0.3.0...v0.3.1) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix build &nbsp;-&nbsp; by @honghuangdc [<samp>(05159)</samp>](https://github.com/soybeanjs/changelog/commit/05159c7)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.0](https://github.com/soybeanjs/changelog/compare/v0.0.7...v0.3.0) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
