@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.3.0](https://github.com/soybeanjs/changelog/compare/v0.0.7...v0.3.0) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix cli &nbsp;-&nbsp; by @honghuangdc [<samp>(3fd7b)</samp>](https://github.com/soybeanjs/changelog/commit/3fd7b2c)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: 迁移githublogen &nbsp;-&nbsp; by @honghuangdc [<samp>(61f40)</samp>](https://github.com/soybeanjs/changelog/commit/61f407c)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.0.7](https://github.com/soybeanjs/changelog/compare/v0.0.6...v0.0.7) (23-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
