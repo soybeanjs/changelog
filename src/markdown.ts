@@ -110,7 +110,14 @@ function createContributorLine(contributors: ResolvedAuthor[]) {
   let loginLine = '';
   let unLoginLine = '';
 
-  contributors.forEach((contributor, index) => {
+  const contributorMap = new Map<string, ResolvedAuthor>();
+  contributors.forEach(contributor => {
+    contributorMap.set(contributor.email, contributor);
+  });
+
+  const filteredContributors = Array.from(contributorMap.values());
+
+  filteredContributors.forEach((contributor, index) => {
     const { name, email, login } = contributor;
 
     if (!login) {

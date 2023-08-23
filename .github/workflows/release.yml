@@ -20,6 +20,6 @@ jobs:
         with:
           node-version: 18.x
 
-      - run: npx githublogen
+      - run: npx githublogen@latest
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
