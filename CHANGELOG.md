@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.4](https://github.com/soybeanjs/changelog/compare/v0.3.3...v0.3.4) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix the repeat contributor &nbsp;-&nbsp; by @honghuangdc [<samp>(c0fb5)</samp>](https://github.com/soybeanjs/changelog/commit/c0fb5ce)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.3](https://github.com/soybeanjs/changelog/compare/v0.3.2...v0.3.3) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
