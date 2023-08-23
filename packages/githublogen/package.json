@@ -40,12 +40,12 @@
     "cac": "6.7.14",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
-    "ofetch": "1.2.0"
+    "ofetch": "1.2.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.6.7",
-    "@types/node": "20.5.2",
+    "@soybeanjs/cli": "0.7.1",
+    "@types/node": "20.5.3",
     "typescript": "5.1.6",
-    "unbuild": "1.2.1"
+    "unbuild": "2.0.0"
   }
 }
