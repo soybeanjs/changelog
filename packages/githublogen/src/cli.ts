@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import cac from 'cac';
 import { consola } from 'consola';
 import { blue, bold, cyan, dim, red, yellow } from 'kolorist';
