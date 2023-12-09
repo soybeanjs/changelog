@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.3.5](https://github.com/soybeanjs/changelog/compare/v0.3.4...v0.3.5) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix generate markdown when file is not exist &nbsp;-&nbsp; by @honghuangdc [<samp>(ec558)</samp>](https://github.com/soybeanjs/changelog/commit/ec558cd)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & perf code &nbsp;-&nbsp; by @honghuangdc [<samp>(ae92b)</samp>](https://github.com/soybeanjs/changelog/commit/ae92b1a)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(28b6f)</samp>](https://github.com/soybeanjs/changelog/commit/28b6fa9)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.4](https://github.com/soybeanjs/changelog/compare/v0.3.3...v0.3.4) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
