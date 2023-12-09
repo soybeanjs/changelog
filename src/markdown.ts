@@ -220,23 +220,26 @@ export async function isVersionInMarkdown(version: string, mdPath: string) {
 }
 
 export async function writeMarkdown(md: string, mdPath: string, regenerate = false) {
-  let changelogMD: string;
+  let changelogMD: string = '';
 
   const changelogPrefix = '# Changelog';
 
-  if (!regenerate && existsSync(mdPath)) {
+  if (!existsSync(mdPath)) {
+    await writeFile(mdPath, changelogPrefix, 'utf8');
+  }
+
+  if (!regenerate) {
     changelogMD = await readFile(mdPath, 'utf8');
-    if (!changelogMD.startsWith(changelogPrefix)) {
-      changelogMD = `${changelogPrefix}\n\n${changelogMD}`;
-    }
-  } else {
-    changelogMD = `${changelogPrefix}\n\n`;
+  }
+
+  if (!changelogMD.startsWith(changelogPrefix)) {
+    changelogMD = `${changelogPrefix}\n\n${changelogMD}`;
   }
 
   const lastEntry = changelogMD.match(/^###?\s+.*$/m);
 
   if (lastEntry) {
-    changelogMD = `${changelogMD.slice(0, lastEntry.index) + md}\n\n${changelogMD.slice(lastEntry.index)}`;
+    changelogMD += `${changelogMD.slice(0, lastEntry.index) + md}\n\n${changelogMD.slice(lastEntry.index)}`;
   } else {
     changelogMD += `\n${md}\n\n`;
   }
