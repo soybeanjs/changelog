@@ -1,12 +1,11 @@
 import { ofetch } from 'ofetch';
 import dayjs from 'dayjs';
+import { consola } from 'consola';
 import { execCommand, notNullish } from './shared';
 import { VERSION_REG } from './constant';
-import type { RawGitCommit, GitCommit, GitCommitAuthor, GithubConfig, Reference, ResolvedAuthor } from './types';
+import type { GitCommit, GitCommitAuthor, GithubConfig, RawGitCommit, Reference, ResolvedAuthor } from './types';
 
-/**
- * get the total git tags
- */
+/** Get the total git tags */
 export async function getTotalGitTags() {
   const tagStr = await execCommand('git', ['--no-pager', 'tag', '-l', '--sort=creatordate']);
 
@@ -15,9 +14,7 @@ export async function getTotalGitTags() {
   return tags;
 }
 
-/**
- * get map of the git tag and date
- */
+/** Get map of the git tag and date */
 export async function getTagDateMap() {
   const tagDateStr = await execCommand('git', [
     '--no-pager',
@@ -48,8 +45,9 @@ export async function getTagDateMap() {
 }
 
 /**
- * get the git tags by formatting from-to style
- * @param tags git tags
+ * Get the git tags by formatting from-to style
+ *
+ * @param tags Git tags
  */
 export function getFromToTags(tags: string[]) {
   const result: { from: string; to: string }[] = [];
@@ -213,7 +211,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
     const data = await ofetch(`https://ungh.cc/users/find/${email}`);
     login = data?.user?.username || '';
   } catch (e) {
-    console.log('e: ', e);
+    consola.log('e: ', e);
   }
 
   if (login) {
@@ -234,7 +232,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
       });
       login = data?.author?.login || '';
     } catch (e) {
-      console.log('e: ', e);
+      consola.log('e: ', e);
     }
   }
 
@@ -248,7 +246,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
     });
     login = data.items[0].login;
   } catch (e) {
-    console.log('e: ', e);
+    consola.log('e: ', e);
   }
 
   return login;

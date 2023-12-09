@@ -1,11 +1,12 @@
-import { readFile } from 'fs/promises';
+import process from 'node:process';
+import { readFile } from 'node:fs/promises';
 import {
-  getTotalGitTags,
-  getTagDateMap,
-  getLastGitTag,
   getCurrentGitBranch,
-  getGitHubRepo,
   getFirstGitCommit,
+  getGitHubRepo,
+  getLastGitTag,
+  getTagDateMap,
+  getTotalGitTags,
   isPrerelease
 } from './git';
 import type { ChangelogOption } from './types';
@@ -87,7 +88,7 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
 
   opts.tagDateMap = await getTagDateMap();
 
-  opts.prerelease = opts.prerelease ?? isPrerelease(opts.to);
+  opts.prerelease ||= isPrerelease(opts.to);
 
   return opts;
 }

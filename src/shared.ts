@@ -14,8 +14,10 @@ type PartitionFilter<T> = (i: T, idx: number, arr: readonly T[]) => any;
 
 /**
  * Divide an array into two parts by a filter function
+ *
  * @category Array
- * @example const [odd, even] = partition([1, 2, 3, 4], i => i % 2 != 0)
+ * @example
+ *   const [odd, even] = partition([1, 2, 3, 4], i => i % 2 != 0);
  */
 export function partition<T>(array: readonly T[], f1: PartitionFilter<T>): [T[], T[]];
 export function partition<T>(array: readonly T[], f1: PartitionFilter<T>, f2: PartitionFilter<T>): [T[], T[], T[]];
@@ -50,7 +52,9 @@ export function partition<T>(
   f6: PartitionFilter<T>
 ): [T[], T[], T[], T[], T[], T[], T[]];
 export function partition<T>(array: readonly T[], ...filters: PartitionFilter<T>[]): any {
-  const result: T[][] = new Array(filters.length + 1).fill(null).map(() => []);
+  const result: T[][] = Array.from({ length: filters.length + 1 })
+    .fill(null)
+    .map(() => []);
 
   array.forEach((e, idx, arr) => {
     let i = 0;
@@ -69,7 +73,7 @@ export function partition<T>(array: readonly T[], ...filters: PartitionFilter<T>
 export function groupBy<T>(items: T[], key: string, groups: Record<string, T[]> = {}) {
   for (const item of items) {
     const v = (item as any)[key] as string;
-    groups[v] = groups[v] || [];
+    groups[v] ||= [];
     groups[v].push(item);
   }
   return groups;

@@ -1,10 +1,10 @@
-import { existsSync } from 'fs';
-import { readFile, writeFile } from 'fs/promises';
+import { existsSync } from 'node:fs';
+import { readFile, writeFile } from 'node:fs/promises';
 import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
-import { partition, groupBy, capitalize, join } from './shared';
-import { VERSION_REG, VERSION_WITH_RELEASE, VERSION_REG_OF_MARKDOWN } from './constant';
-import type { Reference, GitCommit, ChangelogOption, ResolvedAuthor } from './types';
+import { capitalize, groupBy, join, partition } from './shared';
+import { VERSION_REG, VERSION_REG_OF_MARKDOWN, VERSION_WITH_RELEASE } from './constant';
+import type { ChangelogOption, GitCommit, Reference, ResolvedAuthor } from './types';
 
 function formatReferences(references: Reference[], githubRepo: string, type: 'issues' | 'hash'): string {
   const refs = references

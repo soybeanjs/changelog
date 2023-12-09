@@ -1,13 +1,14 @@
-import { SingleBar, Presets } from 'cli-progress';
+import { Presets, SingleBar } from 'cli-progress';
 import { createOptions } from './options';
 import { getFromToTags, getGitCommits, getGitCommitsAndResolvedAuthors } from './git';
-import { isVersionInMarkdown, generateMarkdown, writeMarkdown } from './markdown';
+import { generateMarkdown, isVersionInMarkdown, writeMarkdown } from './markdown';
 import type { ChangelogOption } from './types';
 
 /**
- * get the changelog markdown by two git tags
- * @param options the changelog options
- * @param showTitle whither show the title
+ * Get the changelog markdown by two git tags
+ *
+ * @param options The changelog options
+ * @param showTitle Whither show the title
  */
 export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, showTitle = true) {
   const opts = await createOptions(options);
@@ -25,9 +26,10 @@ export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, s
 }
 
 /**
- * get the changelog markdown by the total git tags
- * @param options the changelog options
- * @param showProgress whither show the progress bar
+ * Get the changelog markdown by the total git tags
+ *
+ * @param options The changelog options
+ * @param showProgress Whither show the progress bar
  */
 export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOption>, showProgress = true) {
   const opts = await createOptions(options);
@@ -71,8 +73,9 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
 }
 
 /**
- * generate the changelog markdown by two git tags
- * @param options the changelog options
+ * Generate the changelog markdown by two git tags
+ *
+ * @param options The changelog options
  */
 export async function generateChangelog(options?: Partial<ChangelogOption>) {
   const opts = await createOptions(options);
@@ -87,9 +90,10 @@ export async function generateChangelog(options?: Partial<ChangelogOption>) {
 }
 
 /**
- * generate the changelog markdown by the total git tags
- * @param options the changelog options
- * @param showProgress whither show the progress bar
+ * Generate the changelog markdown by the total git tags
+ *
+ * @param options The changelog options
+ * @param showProgress Whither show the progress bar
  */
 export async function generateTotalChangelog(options?: Partial<ChangelogOption>, showProgress = true) {
   const opts = await createOptions(options);

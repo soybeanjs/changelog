@@ -1,180 +1,117 @@
-/**
- * the commit author
- */
+/** The commit author */
 export interface GitCommitAuthor {
-  /**
-   * the author name
-   */
+  /** The author name */
   name: string;
-  /**
-   * the author email
-   */
+  /** The author email */
   email: string;
 }
 
-/**
- * the raw git commit
- */
+/** The raw git commit */
 export interface RawGitCommit {
-  /**
-   * the commit message
-   */
+  /** The commit message */
   message: string;
-  /**
-   * the commit body
-   */
+  /** The commit body */
   body: string;
-  /**
-   * the commit hash
-   */
+  /** The commit hash */
   shortHash: string;
-  /**
-   * the commit author
-   */
+  /** The commit author */
   author: GitCommitAuthor;
 }
 
-/**
- * the reference of the commit
- */
+/** The reference of the commit */
 export interface Reference {
-  /**
-   * the reference type
-   */
+  /** The reference type */
   type: 'hash' | 'issue' | 'pull-request';
-  /**
-   * the reference value
-   */
+  /** The reference value */
   value: string;
 }
 
-/**
- * the resolved github author
- */
+/** The resolved github author */
 export interface ResolvedAuthor extends GitCommitAuthor {
-  /**
-   * the git commit of the author
-   */
+  /** The git commit of the author */
   commits: string[];
-  /**
-   * the github logged username of the author
-   */
+  /** The github logged username of the author */
   login: string;
 }
 
-/**
- * git commit config
- */
+/** Git commit config */
 export interface GitCommit extends RawGitCommit {
-  /**
-   * the commit description
-   */
+  /** The commit description */
   description: string;
-  /**
-   * the commit scope type
-   */
+  /** The commit scope type */
   type: string;
-  /**
-   * the commit scope
-   */
+  /** The commit scope */
   scope: string;
-  /**
-   * the commit references
-   */
+  /** The commit references */
   references: Reference[];
-  /**
-   * the commit authors
-   */
+  /** The commit authors */
   authors: GitCommitAuthor[];
-  /**
-   * the resolved authors
-   */
+  /** The resolved authors */
   resolvedAuthors: ResolvedAuthor[];
-  /**
-   * the commit breaking changes
-   */
+  /** The commit breaking changes */
   isBreaking: boolean;
 }
 
-/**
- * github config
- */
+/** Github config */
 export interface GithubConfig {
   /**
-   * the github repository name
-   * @example soybeanjs/changelog
+   * The github repository name
+   *
+   * @example
+   *   soybeanjs / changelog;
    */
   repo: string;
-  /**
-   * the github token
-   */
+  /** The github token */
   token: string;
 }
 
 export interface ChangelogOption {
   /**
-   * the directory of the project
+   * The directory of the project
+   *
    * @default process.cwd()
    */
   cwd: string;
-  /**
-   * the commit scope types
-   */
+  /** The commit scope types */
   types: Record<string, string>;
-  /**
-   * github config
-   */
+  /** Github config */
   github: GithubConfig;
-  /**
-   * the commit hash or tag
-   */
+  /** The commit hash or tag */
   from: string;
-  /**
-   * the commit hash or tag
-   */
+  /** The commit hash or tag */
   to: string;
-  /**
-   * the whole commit tags
-   */
+  /** The whole commit tags */
   tags: string[];
-  /**
-   * the commit tag and date map
-   */
+  /** The commit tag and date map */
   tagDateMap: Map<string, string>;
-  /**
-   * Whether to capitalize the first letter of the commit type
-   */
+  /** Whether to capitalize the first letter of the commit type */
   capitalize: boolean;
   /**
    * Use emojis in section titles
+   *
    * @default true
    */
   emoji: boolean;
-  /**
-   * the section titles
-   */
+  /** The section titles */
   titles: {
-    /**
-     * the title of breaking changes section
-     */
+    /** The title of breaking changes section */
     breakingChanges: string;
   };
-  /**
-   * the output file path of the changelog
-   */
+  /** The output file path of the changelog */
   output: string;
   /**
    * Whether to regenerate the changelog if it already exists
-   * @example the changelog already exists the content of v0.0.1, but you want to regenerate it
+   *
+   * @example
+   *   the changelog already exists the content of v0.0.1, but you want to regenerate it
    */
   regenerate: boolean;
   /**
-   * version from package.json, with prefix "v"
-   * @description if the options "to" is not specified, the version will be used
+   * Version from package.json, with prefix "v"
+   *
+   * If the options "to" is not specified, the version will be used
    */
   newVersion: string;
-  /**
-   * Mark the release as prerelease
-   */
+  /** Mark the release as prerelease */
   prerelease?: boolean;
 }
