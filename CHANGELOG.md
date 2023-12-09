@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.6](https://github.com/soybeanjs/changelog/compare/v0.3.5...v0.3.6) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: add README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(c6fc4)</samp>](https://github.com/soybeanjs/changelog/commit/c6fc416)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.5](https://github.com/soybeanjs/changelog/compare/v0.3.4...v0.3.5) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
