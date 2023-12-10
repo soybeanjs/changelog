@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.8](https://github.com/soybeanjs/changelog/compare/v0.3.7...v0.3.8) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix code &nbsp;-&nbsp; by @honghuangdc [<samp>(e49f5)</samp>](https://github.com/soybeanjs/changelog/commit/e49f5cb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.7](https://github.com/soybeanjs/changelog/compare/v0.3.6...v0.3.7) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
