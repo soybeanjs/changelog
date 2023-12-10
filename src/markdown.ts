@@ -151,9 +151,7 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const isNewVersion = !VERSION_REG.test(options.to);
-
-  const version = isNewVersion ? options.newVersion : options.to;
+  const { version, isNewVersion } = getVersionInfo(options.to, options.newVersion);
 
   const url = `https://github.com/${options.github.repo}/compare/${options.from}...${version}`;
 
@@ -201,15 +199,20 @@ export function generateMarkdown(params: {
   return md;
 }
 
-export async function isVersionInMarkdown(version: string, mdPath: string) {
+export async function isVersionInMarkdown(to: string, newVersion: string, mdPath: string) {
   let isIn = false;
 
-  const md = await readFile(mdPath, 'utf8');
+  let md = '';
+  try {
+    md = await readFile(mdPath, 'utf8');
+  } catch (error) {}
 
   if (md) {
     const matches = md.match(VERSION_REG_OF_MARKDOWN);
 
     if (matches?.length) {
+      const { version } = getVersionInfo(to, newVersion);
+
       const versionInMarkdown = `## [${version}]`;
 
       isIn = matches.includes(versionInMarkdown);
@@ -219,13 +222,24 @@ export async function isVersionInMarkdown(version: string, mdPath: string) {
   return isIn;
 }
 
+function getVersionInfo(to: string, newVersion: string) {
+  const isNewVersion = !VERSION_REG.test(to);
+
+  const version = isNewVersion ? newVersion : to;
+
+  return {
+    version,
+    isNewVersion
+  };
+}
+
 export async function writeMarkdown(md: string, mdPath: string, regenerate = false) {
   let changelogMD: string = '';
 
   const changelogPrefix = '# Changelog';
 
   if (!existsSync(mdPath)) {
-    await writeFile(mdPath, changelogPrefix, 'utf8');
+    await writeFile(mdPath, `${changelogPrefix}\n\n`, 'utf8');
   }
 
   if (!regenerate) {
@@ -239,7 +253,7 @@ export async function writeMarkdown(md: string, mdPath: string, regenerate = fal
   const lastEntry = changelogMD.match(/^###?\s+.*$/m);
 
   if (lastEntry) {
-    changelogMD += `${changelogMD.slice(0, lastEntry.index) + md}\n\n${changelogMD.slice(lastEntry.index)}`;
+    changelogMD = `${changelogMD.slice(0, lastEntry.index) + md}\n\n${changelogMD.slice(lastEntry.index)}`;
   } else {
     changelogMD += `\n${md}\n\n`;
   }

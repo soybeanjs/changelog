@@ -80,7 +80,7 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
 export async function generateChangelog(options?: Partial<ChangelogOption>) {
   const opts = await createOptions(options);
 
-  const existContent = await isVersionInMarkdown(opts.to, opts.output);
+  const existContent = await isVersionInMarkdown(opts.to, opts.newVersion, opts.output);
 
   if (!opts.regenerate && existContent) return;
 
@@ -104,3 +104,5 @@ export async function generateTotalChangelog(options?: Partial<ChangelogOption>,
 }
 
 export type { ChangelogOption };
+
+generateChangelog();
