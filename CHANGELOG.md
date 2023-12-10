@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.3.7](https://github.com/soybeanjs/changelog/compare/v0.3.6...v0.3.7) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix generate changelog &nbsp;-&nbsp; by @honghuangdc [<samp>(372b8)</samp>](https://github.com/soybeanjs/changelog/commit/372b8ba)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(14985)</samp>](https://github.com/soybeanjs/changelog/commit/1498549)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(22152)</samp>](https://github.com/soybeanjs/changelog/commit/22152e8)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.6](https://github.com/soybeanjs/changelog/compare/v0.3.5...v0.3.6) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
