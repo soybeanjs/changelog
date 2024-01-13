@@ -90,5 +90,12 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
 
   opts.prerelease ||= isPrerelease(opts.to);
 
+  const isFromPrerelease = isPrerelease(opts.from);
+  if (!opts.prerelease && isFromPrerelease) {
+    const allReleaseTags = opts.tags.filter(tag => !isPrerelease(tag));
+
+    opts.from = allReleaseTags[allReleaseTags.length - 2];
+  }
+
   return opts;
 }
