@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.11](https://github.com/soybeanjs/changelog/compare/v0.3.10...v0.3.11) (24-01-14)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix createOptions &nbsp;-&nbsp; by @honghuangdc [<samp>(f1b7b)</samp>](https://github.com/soybeanjs/changelog/commit/f1b7b38)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.10](https://github.com/soybeanjs/changelog/compare/v0.3.9...v0.3.10) (24-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
