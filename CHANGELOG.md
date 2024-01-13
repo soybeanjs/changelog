@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.9-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.0...v0.3.9-beta.1) (24-01-13)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: use tsup replace unbuild &nbsp;-&nbsp; by @honghuangdc [<samp>(bf998)</samp>](https://github.com/soybeanjs/changelog/commit/bf99840)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.9-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.8...v0.3.9-beta.0) (24-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
