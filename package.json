@@ -32,8 +32,11 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": ["dist"],
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
-    "build": "unbuild && pnpm build-pkg",
+    "build": "tsup && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -41,7 +44,6 @@
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release",
-    "stub": "pnpm unbuild --stub",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "update-pkg": "soy ncu"
   },
@@ -60,9 +62,9 @@
     "eslint": "8.56.0",
     "lint-staged": "15.2.0",
     "simple-git-hooks": "2.9.0",
+    "tsup": "^8.0.1",
     "tsx": "4.7.0",
-    "typescript": "5.3.3",
-    "unbuild": "2.0.0"
+    "typescript": "5.3.3"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
