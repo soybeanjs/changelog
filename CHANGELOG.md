@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.9-beta.3](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.2...v0.3.9-beta.3) (24-01-13)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix export &nbsp;-&nbsp; by @honghuangdc [<samp>(5b6a4)</samp>](https://github.com/soybeanjs/changelog/commit/5b6a4ab)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.9-beta.2](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.1...v0.3.9-beta.2) (24-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
