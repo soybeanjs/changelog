@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.9-beta.2](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.1...v0.3.9-beta.2) (24-01-13)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: the release content contain prerelease &nbsp;-&nbsp; by @honghuangdc [<samp>(40716)</samp>](https://github.com/soybeanjs/changelog/commit/40716c3)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.9-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.0...v0.3.9-beta.1) (24-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
