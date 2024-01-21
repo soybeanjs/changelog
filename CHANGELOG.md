@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.3.12](https://github.com/soybeanjs/changelog/compare/v0.3.11...v0.3.12) (24-01-21)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix resolve user &nbsp;-&nbsp; by @honghuangdc [<samp>(ba31d)</samp>](https://github.com/soybeanjs/changelog/commit/ba31d2d)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: add typings &nbsp;-&nbsp; by @honghuangdc [<samp>(c7acb)</samp>](https://github.com/soybeanjs/changelog/commit/c7acb5e)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(2ad2e)</samp>](https://github.com/soybeanjs/changelog/commit/2ad2e59)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.11](https://github.com/soybeanjs/changelog/compare/v0.3.10...v0.3.11) (24-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
