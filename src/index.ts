@@ -14,7 +14,8 @@ export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, s
   const opts = await createOptions(options);
 
   const gitCommits = await getGitCommits(opts.from, opts.to);
-  const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github);
+  const resolvedLogins = new Map<string, string>();
+  const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github, resolvedLogins);
 
   const markdown = generateMarkdown({ commits, options: opts, showTitle, contributors });
 
