@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.13-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.12...v0.3.13-beta.0) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(a8421)</samp>](https://github.com/soybeanjs/changelog/commit/a84210b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.12](https://github.com/soybeanjs/changelog/compare/v0.3.11...v0.3.12) (24-01-21)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
