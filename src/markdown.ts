@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
 import { capitalize, groupBy, join, partition } from './shared';
-import { VERSION_REG, VERSION_REG_OF_MARKDOWN, VERSION_WITH_RELEASE } from './constant';
+import { VERSION_REG_OF_MARKDOWN, VERSION_WITH_RELEASE } from './constant';
 import type { ChangelogOption, GitCommit, Reference, ResolvedAuthor } from './types';
 
 function formatReferences(references: Reference[], githubRepo: string, type: 'issues' | 'hash'): string {
@@ -151,14 +151,12 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const { version, isNewVersion } = getVersionInfo(options.to, options.newVersion);
-
-  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${version}`;
+  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.newVersion}`;
 
   if (showTitle) {
-    const date = isNewVersion ? dayjs().format('YY-MM-DD') : options.tagDateMap.get(options.to);
+    const date = options.tagDateMap.get(options.newVersion) || dayjs().format('YY-MM-DD');
 
-    let title = `## [${version}](${url})`;
+    let title = `## [${options.newVersion}](${url})`;
 
     if (date) {
       title += ` (${date})`;
@@ -199,7 +197,7 @@ export function generateMarkdown(params: {
   return md;
 }
 
-export async function isVersionInMarkdown(to: string, newVersion: string, mdPath: string) {
+export async function isVersionInMarkdown(newVersion: string, mdPath: string) {
   let isIn = false;
 
   let md = '';
@@ -211,26 +209,13 @@ export async function isVersionInMarkdown(to: string, newVersion: string, mdPath
     const matches = md.match(VERSION_REG_OF_MARKDOWN);
 
     if (matches?.length) {
-      const { version } = getVersionInfo(to, newVersion);
-
-      const versionInMarkdown = `## [${version}]`;
+      const versionInMarkdown = `## [${newVersion}]`;
 
       isIn = matches.includes(versionInMarkdown);
     }
   }
 
   return isIn;
-}
-
-function getVersionInfo(to: string, newVersion: string) {
-  const isNewVersion = !VERSION_REG.test(to);
-
-  const version = isNewVersion ? newVersion : to;
-
-  return {
-    version,
-    isNewVersion
-  };
 }
 
 export async function writeMarkdown(md: string, mdPath: string, regenerate = false) {
