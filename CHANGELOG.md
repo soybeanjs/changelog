@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.15](https://github.com/soybeanjs/changelog/compare/v0.3.14...v0.3.15) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix create options &nbsp;-&nbsp; by @honghuangdc [<samp>(9403a)</samp>](https://github.com/soybeanjs/changelog/commit/9403a05)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.14](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
