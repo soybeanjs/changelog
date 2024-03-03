@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.14-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.14-beta.0...v0.3.14-beta.1) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update launch.json &nbsp;-&nbsp; by @honghuangdc [<samp>(97aa6)</samp>](https://github.com/soybeanjs/changelog/commit/97aa6dc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.14-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14-beta.0) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
