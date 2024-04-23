@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.20](https://github.com/soybeanjs/changelog/compare/v0.3.19...v0.3.20) (24-04-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: remove useless code &nbsp;-&nbsp; by @honghuangdc [<samp>(344a4)</samp>](https://github.com/soybeanjs/changelog/commit/344a476)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.19](https://github.com/soybeanjs/changelog/compare/v0.3.18...v0.3.19) (24-04-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
