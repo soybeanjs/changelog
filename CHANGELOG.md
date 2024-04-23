@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.3.16](https://github.com/soybeanjs/changelog/compare/v0.3.15...v0.3.16) (24-04-23)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: refactor get to tag &nbsp;-&nbsp; by @honghuangdc [<samp>(5f6ad)</samp>](https://github.com/soybeanjs/changelog/commit/5f6ad09)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & update vscode config &nbsp;-&nbsp; by @honghuangdc [<samp>(4d004)</samp>](https://github.com/soybeanjs/changelog/commit/4d00473)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.15](https://github.com/soybeanjs/changelog/compare/v0.3.14...v0.3.15) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
