@@ -7,7 +7,7 @@ import type { GitCommit, GitCommitAuthor, GithubConfig, RawGitCommit, Reference,
 
 /** Get the total git tags */
 export async function getTotalGitTags() {
-  const tagStr = await execCommand('git', ['--no-pager', 'tag', '-l', '--sort=creatordate']);
+  const tagStr = await execCommand('git', ['--no-pager', 'tag', '-l', '--sort=v:refname']);
 
   const tags = tagStr.split('\n');
 
