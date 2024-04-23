@@ -1,6 +1,6 @@
 import { Presets, SingleBar } from 'cli-progress';
 import { createOptions } from './options';
-import { getFromToTags, getGitCommits, getGitCommitsAndResolvedAuthors } from './git';
+import { getCurrentGitBranch, getFromToTags, getGitCommits, getGitCommitsAndResolvedAuthors } from './git';
 import { generateMarkdown, isVersionInMarkdown, writeMarkdown } from './markdown';
 import type { ChangelogOption } from './types';
 
@@ -13,7 +13,10 @@ import type { ChangelogOption } from './types';
 export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, showTitle = true) {
   const opts = await createOptions(options);
 
-  const gitCommits = await getGitCommits(opts.from, opts.to);
+  const current = await getCurrentGitBranch();
+  const to = opts.tags.includes(opts.to) ? opts.to : current;
+
+  const gitCommits = await getGitCommits(opts.from, to);
   const resolvedLogins = new Map<string, string>();
   const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github, resolvedLogins);
 
