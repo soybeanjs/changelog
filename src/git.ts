@@ -2,7 +2,7 @@ import { ofetch } from 'ofetch';
 import dayjs from 'dayjs';
 import { consola } from 'consola';
 import { execCommand, notNullish } from './shared';
-import { VERSION_REG } from './constant';
+import { RELEASE_VERSION_REG, VERSION_REG } from './constant';
 import type { GitCommit, GitCommitAuthor, GithubConfig, RawGitCommit, Reference, ResolvedAuthor } from './types';
 
 /** Get the total git tags */
@@ -11,7 +11,34 @@ export async function getTotalGitTags() {
 
   const tags = tagStr.split('\n');
 
-  return tags.filter(tag => VERSION_REG.test(tag));
+  const filtered = tags.filter(tag => VERSION_REG.test(tag));
+
+  return sortTags(filtered);
+}
+
+function sortTags(tags: string[]) {
+  tags.sort((a, b) => {
+    const versionA = a.match(RELEASE_VERSION_REG)?.[0] || '';
+    const versionB = b.match(RELEASE_VERSION_REG)?.[0] || '';
+
+    if (versionA < versionB) {
+      return -1;
+    } else if (versionA > versionB) {
+      return 1;
+    }
+
+    const isBetaA = isPrerelease(a);
+    const isBetaB = isPrerelease(b);
+
+    if (isBetaA && !isBetaB) {
+      return -1;
+    } else if (!isBetaA && isBetaB) {
+      return 1;
+    }
+    return 0;
+  });
+
+  return tags;
 }
 
 /** Get map of the git tag and date */
