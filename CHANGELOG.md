@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.3.15](https://github.com/soybeanjs/changelog/compare/v0.3.14...v0.3.15) (24-03-03)
+## [v0.3.15](https://github.com/soybeanjs/changelog/compare/v0.3.14...v0.3.15) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -11,7 +11,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.14](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14) (24-03-03)
+## [v0.3.14](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -22,7 +22,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.14-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.14-beta.0...v0.3.14-beta.1) (24-03-03)
+## [v0.3.14-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.14-beta.0...v0.3.14-beta.1) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -32,7 +32,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.14-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14-beta.0) (24-03-03)
+## [v0.3.14-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.13...v0.3.14-beta.0) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -42,7 +42,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.13](https://github.com/soybeanjs/changelog/compare/v0.3.12...v0.3.13) (24-03-03)
+## [v0.3.13](https://github.com/soybeanjs/changelog/compare/v0.3.12...v0.3.13) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -56,7 +56,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.13-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.12...v0.3.13-beta.0) (24-03-03)
+## [v0.3.13-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.12...v0.3.13-beta.0) (2024-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -66,7 +66,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.12](https://github.com/soybeanjs/changelog/compare/v0.3.11...v0.3.12) (24-01-21)
+## [v0.3.12](https://github.com/soybeanjs/changelog/compare/v0.3.11...v0.3.12) (2024-01-21)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -84,7 +84,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.11](https://github.com/soybeanjs/changelog/compare/v0.3.10...v0.3.11) (24-01-14)
+## [v0.3.11](https://github.com/soybeanjs/changelog/compare/v0.3.10...v0.3.11) (2024-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -94,7 +94,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.10](https://github.com/soybeanjs/changelog/compare/v0.3.9...v0.3.10) (24-01-14)
+## [v0.3.10](https://github.com/soybeanjs/changelog/compare/v0.3.9...v0.3.10) (2024-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -104,17 +104,29 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.9](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.3...v0.3.9) (24-01-14)
+## [v0.3.9](https://github.com/soybeanjs/changelog/compare/v0.3.8...v0.3.9) (2024-01-14)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**:
+  - use tsup replace unbuild &nbsp;-&nbsp; by @honghuangdc [<samp>(bf998)</samp>](https://github.com/soybeanjs/changelog/commit/bf99840)
+  - the release content contain prerelease &nbsp;-&nbsp; by @honghuangdc [<samp>(40716)</samp>](https://github.com/soybeanjs/changelog/commit/40716c3)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix export &nbsp;-&nbsp; by @honghuangdc [<samp>(5b6a4)</samp>](https://github.com/soybeanjs/changelog/commit/5b6a4ab)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
-- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(c2cae)</samp>](https://github.com/soybeanjs/changelog/commit/c2cae28)
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(db919)</samp>](https://github.com/soybeanjs/changelog/commit/db91927)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(c2cae)</samp>](https://github.com/soybeanjs/changelog/commit/c2cae28)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.9-beta.3](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.2...v0.3.9-beta.3) (24-01-13)
+## [v0.3.9-beta.3](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.2...v0.3.9-beta.3) (2024-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -124,7 +136,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.9-beta.2](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.1...v0.3.9-beta.2) (24-01-13)
+## [v0.3.9-beta.2](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.1...v0.3.9-beta.2) (2024-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -134,7 +146,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.9-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.0...v0.3.9-beta.1) (24-01-13)
+## [v0.3.9-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.9-beta.0...v0.3.9-beta.1) (2024-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -144,7 +156,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.9-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.8...v0.3.9-beta.0) (24-01-13)
+## [v0.3.9-beta.0](https://github.com/soybeanjs/changelog/compare/v0.3.8...v0.3.9-beta.0) (2024-01-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -154,7 +166,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.8](https://github.com/soybeanjs/changelog/compare/v0.3.7...v0.3.8) (23-12-10)
+## [v0.3.8](https://github.com/soybeanjs/changelog/compare/v0.3.7...v0.3.8) (2023-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -164,7 +176,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.7](https://github.com/soybeanjs/changelog/compare/v0.3.6...v0.3.7) (23-12-10)
+## [v0.3.7](https://github.com/soybeanjs/changelog/compare/v0.3.6...v0.3.7) (2023-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -182,7 +194,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.6](https://github.com/soybeanjs/changelog/compare/v0.3.5...v0.3.6) (23-12-10)
+## [v0.3.6](https://github.com/soybeanjs/changelog/compare/v0.3.5...v0.3.6) (2023-12-10)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
@@ -192,7 +204,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.5](https://github.com/soybeanjs/changelog/compare/v0.3.4...v0.3.5) (23-12-10)
+## [v0.3.5](https://github.com/soybeanjs/changelog/compare/v0.3.4...v0.3.5) (2023-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -210,7 +222,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.4](https://github.com/soybeanjs/changelog/compare/v0.3.3...v0.3.4) (23-08-23)
+## [v0.3.4](https://github.com/soybeanjs/changelog/compare/v0.3.3...v0.3.4) (2023-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -220,7 +232,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.3](https://github.com/soybeanjs/changelog/compare/v0.3.2...v0.3.3) (23-08-23)
+## [v0.3.3](https://github.com/soybeanjs/changelog/compare/v0.3.2...v0.3.3) (2023-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -234,7 +246,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.2](https://github.com/soybeanjs/changelog/compare/v0.3.1...v0.3.2) (23-08-23)
+## [v0.3.2](https://github.com/soybeanjs/changelog/compare/v0.3.1...v0.3.2) (2023-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -244,7 +256,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.1](https://github.com/soybeanjs/changelog/compare/v0.3.0...v0.3.1) (23-08-23)
+## [v0.3.1](https://github.com/soybeanjs/changelog/compare/v0.3.0...v0.3.1) (2023-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -254,7 +266,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.3.0](https://github.com/soybeanjs/changelog/compare/v0.0.7...v0.3.0) (23-08-23)
+## [v0.3.0](https://github.com/soybeanjs/changelog/compare/v0.0.7...v0.3.0) (2023-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -268,7 +280,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.0.7](https://github.com/soybeanjs/changelog/compare/v0.0.6...v0.0.7) (23-07-27)
+## [v0.0.7](https://github.com/soybeanjs/changelog/compare/v0.0.6...v0.0.7) (2023-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
@@ -278,7 +290,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.0.6](https://github.com/soybeanjs/changelog/compare/v0.0.5...v0.0.6) (23-07-27)
+## [v0.0.6](https://github.com/soybeanjs/changelog/compare/v0.0.5...v0.0.6) (2023-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -288,7 +300,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.0.5](https://github.com/soybeanjs/changelog/compare/v0.0.4...v0.0.5) (23-07-27)
+## [v0.0.5](https://github.com/soybeanjs/changelog/compare/v0.0.4...v0.0.5) (2023-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
@@ -302,7 +314,7 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v0.0.4](https://github.com/soybeanjs/changelog/compare/v0.0.3...main) (23-06-13)
+## [v0.0.4](https://github.com/soybeanjs/changelog/compare/v0.0.3...v0.0.4) (2023-06-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -311,21 +323,20 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 
-[Soybean](mailto:honghuangdc@gmail.com)
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.0.3](https://github.com/soybeanjs/changelog/compare/v0.0.2...v0.0.3) (2023-06-12)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix version title &nbsp;-&nbsp; by @honghuangdc [<samp>(035df)</samp>](https://github.com/soybeanjs/changelog/commit/035df12)
+- **projects**: fix version title &nbsp;-&nbsp; by **Soybean** [<samp>(035df)</samp>](https://github.com/soybeanjs/changelog/commit/035df12)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
-- **projects**:
-  - update deps & update package.json &nbsp;-&nbsp; by @honghuangdc [<samp>(02330)</samp>](https://github.com/soybeanjs/changelog/commit/0233089)
-  - release v0.0.3 &nbsp;-&nbsp; by @honghuangdc [<samp>(ed7fe)</samp>](https://github.com/soybeanjs/changelog/commit/ed7fe7e)
+- **projects**: update deps & update package.json &nbsp;-&nbsp; by **Soybean** [<samp>(02330)</samp>](https://github.com/soybeanjs/changelog/commit/0233089)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -333,13 +344,10 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix when only one tag generate total changelog &nbsp;-&nbsp; by @honghuangdc [<samp>(6b878)</samp>](https://github.com/soybeanjs/changelog/commit/6b878e1)
-
-### &nbsp;&nbsp;&nbsp;🏡 Chore
-
-- **projects**: release v0.0.2 &nbsp;-&nbsp; by @honghuangdc [<samp>(13e14)</samp>](https://github.com/soybeanjs/changelog/commit/13e146f)
+- **projects**: fix when only one tag generate total changelog &nbsp;-&nbsp; by **Soybean** [<samp>(6b878)</samp>](https://github.com/soybeanjs/changelog/commit/6b878e1)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 

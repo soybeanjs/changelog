@@ -1,14 +1,6 @@
 import process from 'node:process';
 import { readFile } from 'node:fs/promises';
-import {
-  getCurrentGitBranch,
-  getFirstGitCommit,
-  getGitHubRepo,
-  getLastGitTag,
-  getTagDateMap,
-  getTotalGitTags,
-  isPrerelease
-} from './git';
+import { getFirstGitCommit, getGitHubRepo, getTagDateMap, getTotalGitTags, isPrerelease } from './git';
 import type { ChangelogOption } from './types';
 
 function createDefaultOptions() {
@@ -44,8 +36,7 @@ function createDefaultOptions() {
       breakingChanges: '🚨 Breaking Changes'
     },
     output: 'CHANGELOG.md',
-    regenerate: false,
-    newVersion: ''
+    regenerate: false
   };
 
   return options;
@@ -74,27 +65,26 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
 
   opts.github.repo ||= await getGitHubRepo();
 
-  opts.newVersion ||= `v${newVersion}`;
-  opts.from ||= await getLastGitTag();
-  opts.to ||= await getCurrentGitBranch();
+  const tags = await getTotalGitTags();
+  opts.tags = tags;
+
+  opts.from ||= tags[tags.length - 1];
+  opts.to ||= `v${newVersion}`;
 
   if (opts.to === opts.from) {
-    const lastTag = await getLastGitTag(-1);
+    const lastTag = tags[tags.length - 2];
     const firstCommit = await getFirstGitCommit();
     opts.from = lastTag || firstCommit;
   }
-
-  opts.tags = await getTotalGitTags();
 
   opts.tagDateMap = await getTagDateMap();
 
   opts.prerelease ||= isPrerelease(opts.to);
 
   const isFromPrerelease = isPrerelease(opts.from);
-  if (!isPrerelease(newVersion) && isFromPrerelease) {
-    const nVersion = opts.newVersion;
 
-    const allReleaseTags = opts.tags.filter(tag => !isPrerelease(tag) && tag !== nVersion);
+  if (!isPrerelease(newVersion) && isFromPrerelease) {
+    const allReleaseTags = opts.tags.filter(tag => !isPrerelease(tag) && tag !== opts.to);
 
     opts.from = allReleaseTags[allReleaseTags.length - 1];
   }

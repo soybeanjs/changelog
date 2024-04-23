@@ -106,12 +106,6 @@ export interface ChangelogOption {
    *   the changelog already exists the content of v0.0.1, but you want to regenerate it
    */
   regenerate: boolean;
-  /**
-   * Version from package.json, with prefix "v"
-   *
-   * If the options "to" is not specified, the version will be used
-   */
-  newVersion: string;
   /** Mark the release as prerelease */
   prerelease?: boolean;
 }

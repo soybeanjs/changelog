@@ -11,7 +11,7 @@ export async function getTotalGitTags() {
 
   const tags = tagStr.split('\n');
 
-  return tags;
+  return tags.filter(tag => VERSION_REG.test(tag));
 }
 
 /** Get map of the git tag and date */
@@ -52,19 +52,31 @@ export async function getTagDateMap() {
 export function getFromToTags(tags: string[]) {
   const result: { from: string; to: string }[] = [];
 
-  tags.forEach((tag, index) => {
-    if (index < tags.length - 1) {
-      result.push({ from: tag, to: tags[index + 1] });
+  if (tags.length < 2) {
+    return result;
+  }
+
+  const releaseTags = tags.filter(tag => !isPrerelease(tag));
+
+  const reversedTags = [...tags].reverse();
+
+  reversedTags.forEach((tag, index) => {
+    if (index < reversedTags.length - 1) {
+      const to = tag;
+
+      let from = reversedTags[index + 1];
+
+      if (!isPrerelease(to)) {
+        const toIndex = releaseTags.indexOf(to);
+
+        from = releaseTags[toIndex - 1];
+      }
+
+      result.push({ from, to });
     }
   });
 
-  return result;
-}
-
-export async function getLastGitTag(delta = 0) {
-  const tags = await getTotalGitTags();
-
-  return tags[tags.length + delta - 1];
+  return result.reverse();
 }
 
 async function getGitMainBranchName() {

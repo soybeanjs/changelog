@@ -151,12 +151,12 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.newVersion}`;
+  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to}`;
 
   if (showTitle) {
-    const date = options.tagDateMap.get(options.newVersion) || dayjs().format('YY-MM-DD');
+    const date = options.tagDateMap.get(options.to) || dayjs().format('YYYY-MM-DD');
 
-    let title = `## [${options.newVersion}](${url})`;
+    let title = `## [${options.to}](${url})`;
 
     if (date) {
       title += ` (${date})`;
