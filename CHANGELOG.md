@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.22](https://github.com/soybeanjs/changelog/compare/tauri-v1.0.1...v0.3.22) (24-04-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: filter invalid version with custom prefix &nbsp;-&nbsp; by @honghuangdc [<samp>(afe3c)</samp>](https://github.com/soybeanjs/changelog/commit/afe3c12)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.21](https://github.com/soybeanjs/changelog/compare/v0.3.20...v0.3.21) (24-04-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes

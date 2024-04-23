@@ -1,7 +1,7 @@
 {
   "name": "githublogen",
   "type": "module",
-  "version": "0.3.21",
+  "version": "0.3.22",
   "packageManager": "pnpm@9.0.5",
   "author": {
     "name": "Soybean",
