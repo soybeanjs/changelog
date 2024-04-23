@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.3.17](https://github.com/soybeanjs/changelog/compare/v0.3.16...v0.3.17) (24-04-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix get to value &nbsp;-&nbsp; by @honghuangdc [<samp>(b9bbd)</samp>](https://github.com/soybeanjs/changelog/commit/b9bbd9e)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(d510e)</samp>](https://github.com/soybeanjs/changelog/commit/d510e9c)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.16](https://github.com/soybeanjs/changelog/compare/v0.3.15...v0.3.16) (24-04-23)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
