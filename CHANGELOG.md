@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.21](https://github.com/soybeanjs/changelog/compare/v0.3.20...v0.3.21) (24-04-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: use semver sort tags &nbsp;-&nbsp; by @honghuangdc [<samp>(83bb0)</samp>](https://github.com/soybeanjs/changelog/commit/83bb053)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.20](https://github.com/soybeanjs/changelog/compare/v0.3.19...v0.3.20) (24-04-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
