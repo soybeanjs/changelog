@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.19](https://github.com/soybeanjs/changelog/compare/v0.3.18...v0.3.19) (24-04-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix tags order &nbsp;-&nbsp; by @honghuangdc [<samp>(2ff7e)</samp>](https://github.com/soybeanjs/changelog/commit/2ff7eaa)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.18](https://github.com/soybeanjs/changelog/compare/v0.3.17...v0.3.18) (24-04-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
