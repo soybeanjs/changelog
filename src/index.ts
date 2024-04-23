@@ -107,6 +107,4 @@ export async function generateTotalChangelog(options?: Partial<ChangelogOption>,
   await writeMarkdown(markdown, opts.output, true);
 }
 
-generateTotalChangelog();
-
 export type { ChangelogOption };
