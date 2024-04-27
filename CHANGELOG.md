@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.23](https://github.com/soybeanjs/changelog/compare/v0.3.22...v0.3.23) (24-04-27)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add types `optimize` &nbsp;-&nbsp; by @honghuangdc [<samp>(c957f)</samp>](https://github.com/soybeanjs/changelog/commit/c957f2a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.22](https://github.com/soybeanjs/changelog/compare/tauri-v1.0.1...v0.3.22) (24-04-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
