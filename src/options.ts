@@ -12,6 +12,7 @@ function createDefaultOptions() {
       feat: '🚀 Features',
       fix: '🐞 Bug Fixes',
       perf: '🔥 Performance',
+      optimize: '🛠 Optimizations',
       refactor: '💅 Refactors',
       docs: '📖 Documentation',
       build: '📦 Build',
