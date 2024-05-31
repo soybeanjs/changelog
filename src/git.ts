@@ -17,8 +17,6 @@ export async function getTotalGitTags() {
   return semver.sort(filtered);
 }
 
-getTotalGitTags();
-
 /** Get map of the git tag and date */
 export async function getTagDateMap() {
   const tagDateStr = await execCommand('git', [
@@ -48,8 +46,6 @@ export async function getTagDateMap() {
 
   return map;
 }
-
-getTagDateMap();
 
 /**
  * Get the git tags by formatting from-to style
