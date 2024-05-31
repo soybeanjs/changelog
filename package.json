@@ -1,7 +1,7 @@
 {
   "name": "@soybeanjs/changelog",
   "type": "module",
-  "version": "0.3.23",
+  "version": "0.3.24",
   "packageManager": "pnpm@9.1.4",
   "description": "generate changelog form git tags and commits for github",
   "author": {

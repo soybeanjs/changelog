@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.3.24](https://github.com/soybeanjs/changelog/compare/v0.3.23...v0.3.24) (2024-05-31)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix code &nbsp;-&nbsp; by @honghuangdc [<samp>(3a78f)</samp>](https://github.com/soybeanjs/changelog/commit/3a78fdc)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(fdc46)</samp>](https://github.com/soybeanjs/changelog/commit/fdc46c5)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.3.23](https://github.com/soybeanjs/changelog/compare/v0.3.22...v0.3.23) (24-04-27)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
