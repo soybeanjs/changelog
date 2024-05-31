@@ -2,7 +2,7 @@
   "name": "@soybeanjs/changelog",
   "type": "module",
   "version": "0.3.23",
-  "packageManager": "pnpm@9.1.2",
+  "packageManager": "pnpm@9.1.4",
   "description": "generate changelog form git tags and commits for github",
   "author": {
     "name": "Soybean",
@@ -33,7 +33,8 @@
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "engines": {
-    "node": ">=14"
+    "node": ">=16",
+    "pnpm": ">=9"
   },
   "scripts": {
     "build": "tsup && pnpm build-pkg",
@@ -48,23 +49,24 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/eslint-config": "^1.3.2",
+    "@soybeanjs/eslint-config": "^1.3.5",
     "cli-progress": "3.12.0",
     "convert-gitmoji": "0.1.5",
-    "dayjs": "1.11.10",
-    "execa": "8.0.1",
+    "dayjs": "1.11.11",
+    "execa": "9.1.0",
     "ofetch": "1.3.4",
-    "semver": "7.6.0"
+    "semver": "7.6.2"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.0.11",
+    "@soybeanjs/cli": "1.0.14",
     "@types/cli-progress": "3.11.5",
-    "@types/node": "20.12.7",
-    "eslint": "9.1.1",
-    "lint-staged": "15.2.2",
+    "@types/node": "20.12.13",
+    "@types/semver": "^7.5.8",
+    "eslint": "9.3.0",
+    "lint-staged": "15.2.5",
     "simple-git-hooks": "2.11.1",
     "tsup": "^8.0.2",
-    "tsx": "4.7.2",
+    "tsx": "4.11.0",
     "typescript": "5.4.5"
   },
   "simple-git-hooks": {
