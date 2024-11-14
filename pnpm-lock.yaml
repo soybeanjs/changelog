@@ -24,8 +24,8 @@ importers:
         specifier: 9.5.1
         version: 9.5.1
       ofetch:
-        specifier: 1.3.4
-        version: 1.3.4
+        specifier: 1.4.1
+        version: 1.4.1
       semver:
         specifier: 7.6.2
         version: 7.6.2
@@ -79,8 +79,8 @@ importers:
         specifier: 1.8.0
         version: 1.8.0
       ofetch:
-        specifier: 1.3.4
-        version: 1.3.4
+        specifier: 1.4.1
+        version: 1.4.1
     devDependencies:
       '@soybeanjs/cli':
         specifier: 1.0.14
@@ -2176,6 +2176,9 @@ packages:
   ofetch@1.3.4:
     resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
 
+  ofetch@1.4.1:
+    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
+
   ohash@1.1.3:
     resolution: {integrity: sha512-zuHHiGTYTA1sYJ/wZN+t5HKZaH23i4yI1HMwbuXm24Nid7Dv0KcuRlKoNKS9UNfAVSBlnGLcuQrnOKWOZoEGaw==}
 
@@ -2802,6 +2805,9 @@ packages:
 
   ufo@1.5.3:
     resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
+
+  ufo@1.5.4:
+    resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -5155,7 +5161,7 @@ snapshots:
       consola: 3.2.3
       execa: 8.0.1
       pathe: 1.1.2
-      ufo: 1.5.3
+      ufo: 1.5.4
 
   object-assign@4.1.1: {}
 
@@ -5163,7 +5169,13 @@ snapshots:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
-      ufo: 1.5.3
+      ufo: 1.5.4
+
+  ofetch@1.4.1:
+    dependencies:
+      destr: 2.0.3
+      node-fetch-native: 1.6.4
+      ufo: 1.5.4
 
   ohash@1.1.3: {}
 
@@ -5776,6 +5788,8 @@ snapshots:
   typescript@5.4.5: {}
 
   ufo@1.5.3: {}
+
+  ufo@1.5.4: {}
 
   undici-types@5.26.5: {}
 
