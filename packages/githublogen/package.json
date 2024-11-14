@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.0.14",
-    "@types/node": "20.12.13",
+    "@types/node": "22.9.0",
     "typescript": "5.4.5"
   }
 }
