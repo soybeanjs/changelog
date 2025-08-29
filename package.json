@@ -25,19 +25,19 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "engines": {
-    "node": ">=16",
+    "node": ">=18",
     "pnpm": ">=9"
   },
   "scripts": {
-    "build": "tsup && pnpm build-pkg",
+    "build": "tsdown && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -49,7 +49,7 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/eslint-config": "^1.7.1",
+    "@soybeanjs/eslint-config": "1.7.1",
     "cli-progress": "3.12.0",
     "convert-gitmoji": "0.1.5",
     "dayjs": "1.11.15",
@@ -61,11 +61,11 @@
     "@soybeanjs/cli": "1.4.0",
     "@types/cli-progress": "3.11.6",
     "@types/node": "24.3.0",
-    "@types/semver": "^7.7.0",
+    "@types/semver": "7.7.0",
     "eslint": "9.34.0",
     "lint-staged": "16.1.5",
     "simple-git-hooks": "2.13.1",
-    "tsup": "^8.5.0",
+    "tsdown": "0.14.2",
     "tsx": "4.20.5",
     "typescript": "5.9.2"
   },

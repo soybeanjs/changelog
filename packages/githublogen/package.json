@@ -26,11 +26,11 @@
   },
   "files": ["dist"],
   "engines": {
-    "node": ">=16",
+    "node": ">=18",
     "pnpm": ">=9"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
@@ -42,8 +42,9 @@
     "ofetch": "1.4.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.3.1",
+    "@soybeanjs/cli": "1.4.0",
     "@types/node": "24.3.0",
+    "tsdown": "0.14.2",
     "typescript": "5.9.2"
   }
 }

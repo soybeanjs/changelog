@@ -38,7 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
-It will be trigged whenever you push a tag to GitHub that starts with `v`.
+It will be triggered whenever you push a tag to GitHub that starts with `v`.
 
 ## Configuration
 
