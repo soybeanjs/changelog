@@ -1,7 +1,7 @@
+import type { ChangelogOption } from '@soybeanjs/changelog';
 import { ofetch } from 'ofetch';
 import { consola } from 'consola';
 import { cyan, green, red, yellow } from 'kolorist';
-import type { ChangelogOption } from '@soybeanjs/changelog';
 
 function getHeaders(githubToken: string) {
   return {
@@ -16,7 +16,7 @@ export async function hasTagOnGitHub(tag: string, repo: string, githubToken: str
       headers: getHeaders(githubToken)
     });
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 }
@@ -37,7 +37,7 @@ export async function sendRelease(options: ChangelogOption, content: string) {
       url = exists.url;
       method = 'PATCH';
     }
-  } catch (e) {}
+  } catch {}
 
   const body = {
     body: content,

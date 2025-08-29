@@ -1,3 +1,4 @@
+/* eslint-disable max-params */
 import type { Options } from 'execa';
 
 export async function execCommand(cmd: string, args: string[], options?: Options) {

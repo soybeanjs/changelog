@@ -203,7 +203,7 @@ export async function isVersionInMarkdown(newVersion: string, mdPath: string) {
   let md = '';
   try {
     md = await readFile(mdPath, 'utf8');
-  } catch (error) {}
+  } catch {}
 
   if (md) {
     const matches = md.match(VERSION_REG_OF_MARKDOWN);

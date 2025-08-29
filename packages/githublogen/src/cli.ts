@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import process from 'node:process';
+import { getChangelogMarkdown } from '@soybeanjs/changelog';
 import cac from 'cac';
 import { consola } from 'consola';
 import { blue, bold, cyan, dim, red, yellow } from 'kolorist';
-import { getChangelogMarkdown } from '@soybeanjs/changelog';
 import { version } from '../package.json';
 import { hasTagOnGitHub, isRepoShallow, sendRelease } from './github';
 

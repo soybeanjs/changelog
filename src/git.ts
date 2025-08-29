@@ -1,5 +1,5 @@
-import { ofetch } from 'ofetch';
 import dayjs from 'dayjs';
+import { ofetch } from 'ofetch';
 import { consola } from 'consola';
 import semver from 'semver';
 import { execCommand, notNullish } from './shared';
