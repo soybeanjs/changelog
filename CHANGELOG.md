@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [v0.4.0-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.25...v0.4.0-beta.1) (2025-08-29)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**: optimize code with lint &nbsp;-&nbsp; by @soybeanjs [<samp>(c0344)</samp>](https://github.com/soybeanjs/changelog/commit/c0344dd)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: use tsdown replace tsup &nbsp;-&nbsp; by @soybeanjs [<samp>(f7fdd)</samp>](https://github.com/soybeanjs/changelog/commit/f7fdd16)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(262a4)</samp>](https://github.com/soybeanjs/changelog/commit/262a4f0)
+- **typings**: remove unused convert-gitmoji type definitions &nbsp;-&nbsp; by @soybeanjs [<samp>(2acd9)</samp>](https://github.com/soybeanjs/changelog/commit/2acd9df)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.3.25](https://github.com/soybeanjs/changelog/compare/v0.3.24...v0.3.25) (2025-08-29)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
