@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [v0.3.25](https://github.com/soybeanjs/changelog/compare/v0.3.24...v0.3.25) (2025-08-29)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - bump execa from 9.1.0 to 9.5.1 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/changelog/issues/3 [<samp>(b38b3)</samp>](https://github.com/soybeanjs/changelog/commit/b38b386)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(c4055)</samp>](https://github.com/soybeanjs/changelog/commit/c405506)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(65da7)</samp>](https://github.com/soybeanjs/changelog/commit/65da7ac)
+  - update cli &nbsp;-&nbsp; by @soybeanjs [<samp>(330aa)</samp>](https://github.com/soybeanjs/changelog/commit/330aa16)
+- **deps-dev**:
+  - bump tsx from 4.11.0 to 4.19.2 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/changelog/issues/2 [<samp>(652d6)</samp>](https://github.com/soybeanjs/changelog/commit/652d6d4)
+- **projects**:
+  - add dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(80417)</samp>](https://github.com/soybeanjs/changelog/commit/80417eb)
+  - remove dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(82cf4)</samp>](https://github.com/soybeanjs/changelog/commit/82cf490)
+  - update vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(6055a)</samp>](https://github.com/soybeanjs/changelog/commit/6055a96)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[dependabot[bot]](mailto:49699333+dependabot[bot]@users.noreply.github.com)
+
 ## [v0.3.25-beta.1](https://github.com/soybeanjs/changelog/compare/v0.3.24...v0.3.25-beta.1) (2025-08-29)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
