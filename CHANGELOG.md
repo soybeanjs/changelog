@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.4.1](https://github.com/soybeanjs/changelog/compare/v0.4.0...v0.4.1) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **markdown**: handle undefined 'to' option in URL generation &nbsp;-&nbsp; by @soybeanjs [<samp>(78376)</samp>](https://github.com/soybeanjs/changelog/commit/7837610)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.0](https://github.com/soybeanjs/changelog/compare/v0.3.25...v0.4.0) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
