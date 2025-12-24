@@ -151,7 +151,7 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to}`;
+  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to || options.from}`;
 
   if (showTitle) {
     const date = options.tagDateMap.get(options.to) || dayjs().format('YYYY-MM-DD');
