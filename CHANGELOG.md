@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.4.3](https://github.com/soybeanjs/changelog/compare/v0.4.2...v0.4.3) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **tsdown**: add fixedExtension option to configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(d2637)</samp>](https://github.com/soybeanjs/changelog/commit/d26374a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.2](https://github.com/soybeanjs/changelog/compare/v0.4.1...v0.4.2) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
