@@ -20,7 +20,7 @@ export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, s
   const resolvedLogins = new Map<string, string>();
   const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github, resolvedLogins);
 
-  const markdown = generateMarkdown({ commits, options: opts, showTitle, contributors });
+  const markdown = await generateMarkdown({ commits, options: opts, showTitle, contributors });
 
   return {
     markdown,
@@ -33,7 +33,7 @@ export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, s
  * Get the changelog markdown by the total git tags
  *
  * @param options The changelog options
- * @param showProgress Whither show the progress bar
+ * @param showProgress Whether show the progress bar
  */
 export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOption>, showProgress = true) {
   const opts = await createOptions(options);
@@ -64,7 +64,7 @@ export async function getTotalChangelogMarkdown(options?: Partial<ChangelogOptio
     const gitCommits = await getGitCommits(from, to);
     const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github, resolvedLogins);
 
-    const nextMd = generateMarkdown({ commits, options: { ...opts, from, to }, showTitle: true, contributors });
+    const nextMd = await generateMarkdown({ commits, options: { ...opts, from, to }, showTitle: true, contributors });
 
     markdown = `${nextMd}\n\n${markdown}`;
 

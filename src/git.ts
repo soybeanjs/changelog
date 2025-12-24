@@ -82,7 +82,7 @@ export function getFromToTags(tags: string[]) {
   return result.reverse();
 }
 
-async function getGitMainBranchName() {
+export async function getGitMainBranchName() {
   const main = await execCommand('git', ['rev-parse', '--abbrev-ref', 'HEAD']);
 
   return main;

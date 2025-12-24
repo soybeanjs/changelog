@@ -4,6 +4,7 @@ import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
 import { capitalize, groupBy, join, partition } from './shared';
 import { VERSION_REG_OF_MARKDOWN, VERSION_WITH_RELEASE } from './constant';
+import { getGitMainBranchName } from './git';
 import type { ChangelogOption, GitCommit, Reference, ResolvedAuthor } from './types';
 
 function formatReferences(references: Reference[], githubRepo: string, type: 'issues' | 'hash'): string {
@@ -138,7 +139,7 @@ function createContributorLine(contributors: ResolvedAuthor[]) {
   return `${loginLine}\n${unLoginLine}`;
 }
 
-export function generateMarkdown(params: {
+export async function generateMarkdown(params: {
   commits: GitCommit[];
   options: ChangelogOption;
   showTitle: boolean;
@@ -151,7 +152,11 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to || options.from}`;
+  let url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to}`;
+  if (!options.from) {
+    const mainBranch = await getGitMainBranchName();
+    url = `https://github.com/${options.github.repo}/compare/${options.to}...${mainBranch || 'HEAD'}`;
+  }
 
   if (showTitle) {
     const date = options.tagDateMap.get(options.to) || dayjs().format('YYYY-MM-DD');
