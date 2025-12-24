@@ -7,5 +7,6 @@ export default defineConfig({
   dts: false,
   sourcemap: false,
   minify: false,
-  external: ['consola']
+  external: ['consola'],
+  fixedExtension: false
 });
