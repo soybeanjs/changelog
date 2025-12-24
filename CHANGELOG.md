@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.4.2](https://github.com/soybeanjs/changelog/compare/v0.4.1...v0.4.2) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **markdown**: await generateMarkdown in changelog functions and update URL generation logic &nbsp;-&nbsp; by @soybeanjs [<samp>(d2dc3)</samp>](https://github.com/soybeanjs/changelog/commit/d2dc315)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.1](https://github.com/soybeanjs/changelog/compare/v0.4.0...v0.4.1) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
