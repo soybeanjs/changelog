@@ -2,7 +2,7 @@
   "name": "githublogen",
   "type": "module",
   "version": "0.4.0-beta.1",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.26.2",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
@@ -35,16 +35,16 @@
   },
   "dependencies": {
     "@soybeanjs/changelog": "workspace:*",
-    "c12": "3.2.0",
+    "c12": "3.3.3",
     "cac": "6.7.14",
-    "execa": "9.6.0",
+    "execa": "9.6.1",
     "kolorist": "1.8.0",
-    "ofetch": "1.4.1"
+    "ofetch": "1.5.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.4.0",
-    "@types/node": "24.3.0",
-    "tsdown": "0.14.2",
-    "typescript": "5.9.2"
+    "@soybeanjs/cli": "1.4.1",
+    "@types/node": "25.0.3",
+    "tsdown": "0.18.2",
+    "typescript": "5.9.3"
   }
 }

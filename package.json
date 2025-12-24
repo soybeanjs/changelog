@@ -2,7 +2,7 @@
   "name": "@soybeanjs/changelog",
   "type": "module",
   "version": "0.4.0-beta.1",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.26.2",
   "description": "generate changelog form git tags and commits for github",
   "author": {
     "name": "Soybean",
@@ -49,25 +49,25 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/eslint-config": "1.7.1",
+    "@soybeanjs/eslint-config": "1.7.5",
     "cli-progress": "3.12.0",
     "convert-gitmoji": "0.1.5",
-    "dayjs": "1.11.15",
-    "execa": "9.6.0",
-    "ofetch": "1.4.1",
-    "semver": "7.7.2"
+    "dayjs": "1.11.19",
+    "execa": "9.6.1",
+    "ofetch": "1.5.1",
+    "semver": "7.7.3"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.4.0",
+    "@soybeanjs/cli": "1.4.1",
     "@types/cli-progress": "3.11.6",
-    "@types/node": "24.3.0",
-    "@types/semver": "7.7.0",
-    "eslint": "9.34.0",
-    "lint-staged": "16.1.5",
+    "@types/node": "25.0.3",
+    "@types/semver": "7.7.1",
+    "eslint": "9.39.2",
+    "lint-staged": "16.2.7",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.14.2",
-    "tsx": "4.20.5",
-    "typescript": "5.9.2"
+    "tsdown": "0.18.2",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
