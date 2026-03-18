@@ -220,23 +220,25 @@ function getHeaders(githubToken: string) {
 }
 
 async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string[], email: string) {
+  const { repo, token } = github;
+
   let login = '';
 
+  // token not provided, skip github resolving
+  if (!token) {
+    return login;
+  }
+
   try {
-    const data = await ofetch(`https://ungh.cc/users/find/${email}`);
-    login = data?.user?.username || '';
+    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
+      headers: getHeaders(token)
+    });
+    login = data.items[0].login;
   } catch (e) {
     consola.log('e: ', e);
   }
 
   if (login) {
-    return login;
-  }
-
-  const { repo, token } = github;
-
-  // token not provided, skip github resolving
-  if (!token) {
     return login;
   }
 
@@ -251,18 +253,16 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
     }
   }
 
-  if (login) {
-    return login;
-  }
+  // try {
+  //   const data = await ofetch(`https://ungh.cc/users/find/${email}`);
+  //   login = data?.user?.username || '';
+  // } catch (e) {
+  //   consola.log('e: ', e);
+  // }
 
-  try {
-    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
-      headers: getHeaders(token)
-    });
-    login = data.items[0].login;
-  } catch (e) {
-    consola.log('e: ', e);
-  }
+  // if (login) {
+  //   return login;
+  // }
 
   return login;
 }
