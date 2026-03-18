@@ -44,7 +44,7 @@
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "update-pkg": "soy ncu"
+    "upkg": "soy ncu"
   },
   "dependencies": {
     "cli-progress": "3.12.0",
