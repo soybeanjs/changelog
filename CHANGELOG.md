@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [v0.4.4](https://github.com/soybeanjs/changelog/compare/v0.4.3...v0.4.4) (2026-03-19)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **github**: update user login resolution logic and remove deprecated API calls &nbsp;-&nbsp; by **Soybean** [<samp>(a6e92)</samp>](https://github.com/soybeanjs/changelog/commit/a6e9224)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: migrate to oxlint & oxfmt &nbsp;-&nbsp; by **Soybean** [<samp>(69a84)</samp>](https://github.com/soybeanjs/changelog/commit/69a8420)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by **Soybean** [<samp>(f37f2)</samp>](https://github.com/soybeanjs/changelog/commit/f37f24e)
+- **projects**: rename update-pkg script to upkg for consistency &nbsp;-&nbsp; by **Soybean** [<samp>(e6b82)</samp>](https://github.com/soybeanjs/changelog/commit/e6b821e)
+- **release**: update action versions in release workflow &nbsp;-&nbsp; by **Soybean** [<samp>(e07ea)</samp>](https://github.com/soybeanjs/changelog/commit/e07ea23)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:soybeanjs@outlook.com)
+
 ## [v0.4.3](https://github.com/soybeanjs/changelog/compare/v0.4.2...v0.4.3) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
