@@ -15,8 +15,8 @@ import {
   getChangelogMarkdown,
   getTotalChangelogMarkdown,
   generateChangelog,
-  generateTotalChangelog,
-} from "@soybeanjs/changelog";
+  generateTotalChangelog
+} from '@soybeanjs/changelog';
 
 // get the changelog markdown by two git tags
 getChangelogMarkdown();

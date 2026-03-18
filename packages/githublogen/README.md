@@ -19,7 +19,7 @@ permissions:
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 
 jobs:
   release:

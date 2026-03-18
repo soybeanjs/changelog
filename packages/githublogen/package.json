@@ -1,33 +1,37 @@
 {
   "name": "githublogen",
-  "type": "module",
   "version": "0.4.3",
-  "packageManager": "pnpm@10.26.2",
+  "keywords": [
+    "changelog",
+    "conventional",
+    "github",
+    "log",
+    "release",
+    "releases"
+  ],
+  "homepage": "https://github.com/soybeanjs/changelog/tree/main/packages/githublogen",
+  "bugs": {
+    "url": "https://github.com/soybeanjs/changelog/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
     "url": "https://github.com/soybeanjs"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/changelog/tree/main/packages/githublogen",
   "repository": {
     "url": "https://github.com/soybeanjs/changelog.git"
   },
-  "bugs": {
-    "url": "https://github.com/soybeanjs/changelog/issues"
-  },
-  "keywords": ["github", "release", "releases", "conventional", "changelog", "log"],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "sideEffects": false,
   "bin": {
     "githublogen": "./dist/cli.js"
   },
-  "files": ["dist"],
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=9"
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "tsdown",
@@ -46,5 +50,10 @@
     "@types/node": "25.0.3",
     "tsdown": "0.18.2",
     "typescript": "5.9.3"
-  }
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.26.2"
 }
