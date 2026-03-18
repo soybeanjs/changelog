@@ -49,21 +49,21 @@
   "dependencies": {
     "cli-progress": "3.12.0",
     "convert-gitmoji": "0.1.5",
-    "dayjs": "1.11.19",
+    "dayjs": "1.11.20",
     "execa": "9.6.1",
     "ofetch": "1.5.1",
-    "semver": "7.7.3"
+    "semver": "7.7.4"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.4.1",
+    "@soybeanjs/cli": "1.6.1",
     "@types/cli-progress": "3.11.6",
-    "@types/node": "25.0.3",
+    "@types/node": "25.5.0",
     "@types/semver": "7.7.1",
-    "lint-staged": "16.2.7",
-    "oxfmt": "^0.36.0",
-    "oxlint": "^1.51.0",
+    "lint-staged": "16.4.0",
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.18.2",
+    "tsdown": "0.21.4",
     "tsx": "4.21.0",
     "typescript": "5.9.3"
   },
@@ -78,5 +78,5 @@
     "node": ">=18",
     "pnpm": ">=9"
   },
-  "packageManager": "pnpm@10.26.2"
+  "packageManager": "pnpm@10.32.1"
 }
