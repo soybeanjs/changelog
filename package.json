@@ -1,6 +1,6 @@
 {
   "name": "@soybeanjs/changelog",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "generate changelog form git tags and commits for github",
   "homepage": "https://github.com/soybeanjs/changelog",
   "bugs": {

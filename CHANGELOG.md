@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.4.5](https://github.com/soybeanjs/changelog/compare/v0.4.4...v0.4.5) (2026-03-20)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **github**: simplify author login resolution logic and remove unused error logging &nbsp;-&nbsp; by @soybeanjs [<samp>(88b22)</samp>](https://github.com/soybeanjs/changelog/commit/88b220d)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.4](https://github.com/soybeanjs/changelog/compare/v0.4.3...v0.4.4) (2026-03-19)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
