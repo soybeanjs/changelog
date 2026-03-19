@@ -1,6 +1,5 @@
 import dayjs from 'dayjs';
 import { ofetch } from 'ofetch';
-import { consola } from 'consola';
 import semver from 'semver';
 import { execCommand, notNullish } from './shared';
 import { VERSION_REG } from './constant';
@@ -224,21 +223,28 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
 
   let login = '';
 
-  // token not provided, skip github resolving
-  if (!token) {
-    return login;
-  }
-
   try {
     const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
       headers: getHeaders(token)
     });
     login = data.items[0].login;
-  } catch (e) {
-    consola.log('e: ', e);
-  }
+  } catch {}
 
   if (login) {
+    return login;
+  }
+
+  try {
+    const data = await ofetch(`https://ungh.cc/users/find/${email}`);
+    login = data?.user?.username || '';
+  } catch {}
+
+  if (login) {
+    return login;
+  }
+
+  // token not provided, skip github resolving
+  if (!token) {
     return login;
   }
 
@@ -248,21 +254,8 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
         headers: getHeaders(token)
       });
       login = data?.author?.login || '';
-    } catch (e) {
-      consola.log('e: ', e);
-    }
+    } catch {}
   }
-
-  // try {
-  //   const data = await ofetch(`https://ungh.cc/users/find/${email}`);
-  //   login = data?.user?.username || '';
-  // } catch (e) {
-  //   consola.log('e: ', e);
-  // }
-
-  // if (login) {
-  //   return login;
-  // }
 
   return login;
 }
