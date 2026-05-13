@@ -7,8 +7,5 @@ export default defineConfig({
   dts: false,
   sourcemap: false,
   minify: false,
-  deps: {
-    neverBundle: ['consola']
-  },
   fixedExtension: false
 });
