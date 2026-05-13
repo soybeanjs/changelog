@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [v0.4.6](https://github.com/soybeanjs/changelog/compare/v0.4.5...v0.4.6) (2026-05-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **package**: update lint-staged configuration to use current directory for oxlint &nbsp;-&nbsp; by @soybeanjs [<samp>(aa79c)</samp>](https://github.com/soybeanjs/changelog/commit/aa79c47)
+- **projects**: update deps and update config &nbsp;-&nbsp; by @soybeanjs [<samp>(17aaa)</samp>](https://github.com/soybeanjs/changelog/commit/17aaaa4)
+- **tsdown**: update tsdown config to use deps for consola &nbsp;-&nbsp; by @soybeanjs [<samp>(0f572)</samp>](https://github.com/soybeanjs/changelog/commit/0f57206)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.5](https://github.com/soybeanjs/changelog/compare/v0.4.4...v0.4.5) (2026-03-20)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
