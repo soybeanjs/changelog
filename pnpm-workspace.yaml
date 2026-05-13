@@ -1,2 +1,7 @@
 packages:
   - 'packages/*'
+allowBuilds:
+  esbuild: false
+  simple-git-hooks: false
+shamefullyHoist: true
+ignoreWorkspaceRootCheck: true

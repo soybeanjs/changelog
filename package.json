@@ -52,20 +52,20 @@
     "dayjs": "1.11.20",
     "execa": "9.6.1",
     "ofetch": "1.5.1",
-    "semver": "7.7.4"
+    "semver": "7.8.0"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.6.1",
+    "@soybeanjs/cli": "1.7.2",
     "@types/cli-progress": "3.11.6",
-    "@types/node": "25.5.0",
+    "@types/node": "25.7.0",
     "@types/semver": "7.7.1",
-    "lint-staged": "16.4.0",
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
+    "lint-staged": "17.0.4",
+    "oxfmt": "^0.49.0",
+    "oxlint": "^1.64.0",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.21.4",
+    "tsdown": "0.22.0",
     "tsx": "4.21.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
@@ -74,9 +74,5 @@
   "lint-staged": {
     "*": "oxlint --fix && oxfmt"
   },
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=9"
-  },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@11.1.1"
 }
