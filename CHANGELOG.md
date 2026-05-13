@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.4.7](https://github.com/soybeanjs/changelog/compare/v0.4.6...v0.4.7) (2026-05-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **githublogen**: add consola dependency and remove from neverBundle &nbsp;-&nbsp; by @soybeanjs [<samp>(60af8)</samp>](https://github.com/soybeanjs/changelog/commit/60af84e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.6](https://github.com/soybeanjs/changelog/compare/v0.4.5...v0.4.6) (2026-05-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
