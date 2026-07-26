@@ -86,10 +86,10 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
 
   const isFromPrerelease = isPrerelease(opts.from);
 
-  if (!isPrerelease(newVersion) && isFromPrerelease) {
+  if (opts.from && !isPrerelease(newVersion) && isFromPrerelease) {
     const allReleaseTags = opts.tags.filter(tag => !isPrerelease(tag) && tag !== opts.to);
 
-    opts.from = allReleaseTags[allReleaseTags.length - 1];
+    opts.from = allReleaseTags[allReleaseTags.length - 1] || opts.from;
   }
 
   return opts;
