@@ -1,5 +1,5 @@
-import process from 'node:process';
 import { readFile } from 'node:fs/promises';
+import process from 'node:process';
 import { getFirstGitCommit, getGitHubRepo, getTagDateMap, getTotalGitTags, isPrerelease } from './git';
 import type { ChangelogOption } from './types';
 
@@ -69,10 +69,12 @@ export async function createOptions(options?: Partial<ChangelogOption>) {
   const tags = await getTotalGitTags();
   opts.tags = tags;
 
-  opts.from ||= tags[tags.length - 1];
-  opts.to ||= `v${newVersion}`;
+  opts.from ||= tags[tags.length - 1] || '';
+  if (newVersion) {
+    opts.to ||= `v${newVersion}`;
+  }
 
-  if (opts.to === opts.from) {
+  if (opts.to && opts.to === opts.from) {
     const lastTag = tags[tags.length - 2];
     const firstCommit = await getFirstGitCommit();
     opts.from = lastTag || firstCommit;

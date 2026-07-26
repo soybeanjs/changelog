@@ -1,7 +1,14 @@
 import { Presets, SingleBar } from 'cli-progress';
-import { createOptions } from './options';
-import { getCurrentGitBranch, getFromToTags, getGitCommits, getGitCommitsAndResolvedAuthors } from './git';
+import { VERSION_REG } from './constant';
+import {
+  getCurrentGitBranch,
+  getFromToTags,
+  getGitCommits,
+  getGitCommitsAndResolvedAuthors,
+  isPrerelease
+} from './git';
 import { generateMarkdown, isVersionInMarkdown, writeMarkdown } from './markdown';
+import { createOptions } from './options';
 import type { ChangelogOption } from './types';
 
 /**
@@ -14,9 +21,25 @@ export async function getChangelogMarkdown(options?: Partial<ChangelogOption>, s
   const opts = await createOptions(options);
 
   const current = await getCurrentGitBranch();
-  const to = opts.tags.includes(opts.to) ? opts.to : current;
+  const isToValidVersion = opts.to && VERSION_REG.test(opts.to);
+  const toForGit = isToValidVersion && opts.tags.includes(opts.to) ? opts.to : current;
 
-  const gitCommits = await getGitCommits(opts.from, to);
+  if (!isToValidVersion) {
+    opts.to = current;
+  }
+
+  if (opts.from === opts.to) {
+    const tagIndex = opts.tags.indexOf(opts.to);
+    opts.from = tagIndex > 0 ? opts.tags[tagIndex - 1] : '';
+  }
+
+  if (!opts.from) {
+    opts.from = '';
+  }
+
+  opts.prerelease = isPrerelease(opts.to);
+
+  const gitCommits = await getGitCommits(opts.from, toForGit);
   const resolvedLogins = new Map<string, string>();
   const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, opts.github, resolvedLogins);
 

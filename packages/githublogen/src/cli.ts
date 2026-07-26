@@ -26,23 +26,19 @@ function setupCli() {
 
       consola.log(cyan(options.from) + dim(' -> ') + blue(options.to) + dim(` (${commits.length} commits)`));
 
-      if (!(await hasTagOnGitHub(options.to, options.github.repo, options.github.token))) {
-        consola.error(yellow(`Current ref "${bold(options.to)}" is not available as tags on GitHub. Release skipped.`));
-
-        if (process.exitCode) {
-          process.exitCode = 1;
-        }
-      }
-
       if (!commits.length && (await isRepoShallow())) {
         consola.error(
           yellow(
             'The repo seems to be clone shallowly, which make changelog failed to generate. You might want to specify `fetch-depth: 0` in your CI config.'
           )
         );
-        if (process.exitCode) {
-          process.exitCode = 1;
-        }
+        process.exitCode = 1;
+        return;
+      }
+
+      if (!(await hasTagOnGitHub(options.to, options.github.repo, options.github.token))) {
+        consola.error(yellow(`Current ref "${bold(options.to)}" is not available as tags on GitHub. Release skipped.`));
+        process.exitCode = 1;
         return;
       }
 

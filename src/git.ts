@@ -87,9 +87,15 @@ export async function getGitMainBranchName() {
   return main;
 }
 
-export async function getCurrentGitBranch() {
+export async function getCurrentGitTag() {
   const tag = await execCommand('git', ['tag', '--points-at', 'HEAD']);
-  const main = getGitMainBranchName();
+
+  return tag;
+}
+
+export async function getCurrentGitBranch() {
+  const tag = await getCurrentGitTag();
+  const main = await getGitMainBranchName();
 
   return tag || main;
 }
