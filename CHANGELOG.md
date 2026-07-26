@@ -1,5 +1,26 @@
 # Changelog
 
+## [v0.5.1](https://github.com/soybeanjs/changelog/compare/v0.4.7...v0.5.1) (2026-07-27)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **git**: fix get tags logic &nbsp;-&nbsp; by @soybeanjs [<samp>(85414)</samp>](https://github.com/soybeanjs/changelog/commit/8541484)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: migrant to vite-plus and update config &nbsp;-&nbsp; by @soybeanjs [<samp>(ec869)</samp>](https://github.com/soybeanjs/changelog/commit/ec86937)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: add .codegraph to gitignore &nbsp;-&nbsp; by @soybeanjs [<samp>(f8744)</samp>](https://github.com/soybeanjs/changelog/commit/f8744c2)
+
+### &nbsp;&nbsp;&nbsp;✅ Tests
+
+- **projects**: add test &nbsp;-&nbsp; by @soybeanjs [<samp>(c6371)</samp>](https://github.com/soybeanjs/changelog/commit/c6371de)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
 ## [v0.4.7](https://github.com/soybeanjs/changelog/compare/v0.4.6...v0.4.7) (2026-05-13)
 
@@ -50,7 +71,6 @@
 - **release**: update action versions in release workflow &nbsp;-&nbsp; by **Soybean** [<samp>(e07ea)</samp>](https://github.com/soybeanjs/changelog/commit/e07ea23)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [Soybean](mailto:soybeanjs@outlook.com)
 
@@ -591,7 +611,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.0.3](https://github.com/soybeanjs/changelog/compare/v0.0.2...v0.0.3) (2023-06-12)
@@ -606,7 +625,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.0.2](https://github.com/soybeanjs/changelog/compare/v0.0.1...v0.0.2) (2023-06-07)
@@ -617,8 +635,4 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
-
-
-
