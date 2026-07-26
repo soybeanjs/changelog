@@ -13,12 +13,11 @@
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
-    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true
   },
-  "include": ["./**/*.ts"],
+  "include": ["./src/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

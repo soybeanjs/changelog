@@ -1,8 +1,8 @@
+import { $fetch } from '@soybeanjs/fetch';
 import dayjs from 'dayjs';
-import { ofetch } from 'ofetch';
 import semver from 'semver';
-import { execCommand, notNullish } from './shared';
 import { VERSION_REG } from './constant';
+import { execCommand, notNullish } from './shared';
 import type { GitCommit, GitCommitAuthor, GithubConfig, RawGitCommit, Reference, ResolvedAuthor } from './types';
 
 /** Get the total git tags */
@@ -224,7 +224,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
   let login = '';
 
   try {
-    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
+    const data = await $fetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
       headers: getHeaders(token)
     });
     login = data.items[0].login;
@@ -235,7 +235,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
   }
 
   try {
-    const data = await ofetch(`https://ungh.cc/users/find/${email}`);
+    const data = await $fetch(`https://ungh.cc/users/find/${email}`);
     login = data?.user?.username || '';
   } catch {}
 
@@ -250,7 +250,7 @@ async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string
 
   if (commitHashes.length) {
     try {
-      const data = await ofetch(`https://api.github.com/repos/${repo}/commits/${commitHashes[0]}`, {
+      const data = await $fetch(`https://api.github.com/repos/${repo}/commits/${commitHashes[0]}`, {
         headers: getHeaders(token)
       });
       login = data?.author?.login || '';

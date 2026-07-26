@@ -1,5 +1,5 @@
 import type { ChangelogOption } from '@soybeanjs/changelog';
-import { ofetch } from 'ofetch';
+import { $fetch } from '@soybeanjs/fetch';
 import { consola } from 'consola';
 import { cyan, green, red, yellow } from 'kolorist';
 
@@ -12,7 +12,7 @@ function getHeaders(githubToken: string) {
 
 export async function hasTagOnGitHub(tag: string, repo: string, githubToken: string) {
   try {
-    await ofetch(`https://api.github.com/repos/${repo}/git/ref/tags/${tag}`, {
+    await $fetch(`https://api.github.com/repos/${repo}/git/ref/tags/${tag}`, {
       headers: getHeaders(githubToken)
     });
     return true;
@@ -30,7 +30,7 @@ export async function sendRelease(options: ChangelogOption, content: string) {
   let method = 'POST';
 
   try {
-    const exists = await ofetch(`https://api.github.com/repos/${github}/releases/tags/${options.to}`, {
+    const exists = await $fetch(`https://api.github.com/repos/${github}/releases/tags/${options.to}`, {
       headers
     });
     if (exists.url) {
@@ -55,7 +55,7 @@ export async function sendRelease(options: ChangelogOption, content: string) {
 
   try {
     consola.log(cyan(method === 'POST' ? 'Creating release notes...' : 'Updating release notes...'));
-    const res = await ofetch(url, {
+    const res = await $fetch(url, {
       method,
       body: JSON.stringify(body),
       headers
